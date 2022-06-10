@@ -8,3 +8,7 @@ permalink: /1.4/
 local kubevela = import "github.com/jsonnet-libs/kubevela-libsonnet/1.4/main.libsonnet"
 ```
 
+
+
+* [core](core/index.md)
+* [standard](standard/index.md)
