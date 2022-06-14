@@ -22,8 +22,6 @@ permalink: /1.4/core/v1beta1/resourceTracker/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -36,6 +34,22 @@ permalink: /1.4/core/v1beta1/resourceTracker/
   * [`fn withManagedResources(managedResources)`](#fn-specwithmanagedresources)
   * [`fn withManagedResourcesMixin(managedResources)`](#fn-specwithmanagedresourcesmixin)
   * [`fn withType(type)`](#fn-specwithtype)
+  * [`obj spec.managedResources`](#obj-specmanagedresources)
+    * [`fn withApiVersion(apiVersion)`](#fn-specmanagedresourceswithapiversion)
+    * [`fn withCluster(cluster)`](#fn-specmanagedresourceswithcluster)
+    * [`fn withComponent(component)`](#fn-specmanagedresourceswithcomponent)
+    * [`fn withCreator(creator)`](#fn-specmanagedresourceswithcreator)
+    * [`fn withDeleted(deleted)`](#fn-specmanagedresourceswithdeleted)
+    * [`fn withEnv(env)`](#fn-specmanagedresourceswithenv)
+    * [`fn withFieldPath(fieldPath)`](#fn-specmanagedresourceswithfieldpath)
+    * [`fn withKind(kind)`](#fn-specmanagedresourceswithkind)
+    * [`fn withName(name)`](#fn-specmanagedresourceswithname)
+    * [`fn withNamespace(namespace)`](#fn-specmanagedresourceswithnamespace)
+    * [`fn withRaw(raw)`](#fn-specmanagedresourceswithraw)
+    * [`fn withRawMixin(raw)`](#fn-specmanagedresourceswithrawmixin)
+    * [`fn withResourceVersion(resourceVersion)`](#fn-specmanagedresourceswithresourceversion)
+    * [`fn withTrait(trait)`](#fn-specmanagedresourceswithtrait)
+    * [`fn withUid(uid)`](#fn-specmanagedresourceswithuid)
 
 ## Fields
 
@@ -153,24 +167,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -266,3 +262,129 @@ withType(type)
 ```
 
 "ResourceTrackerType defines the type of resourceTracker"
+
+## obj spec.managedResources
+
+
+
+### fn spec.managedResources.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.managedResources.withCluster
+
+```ts
+withCluster(cluster)
+```
+
+
+
+### fn spec.managedResources.withComponent
+
+```ts
+withComponent(component)
+```
+
+
+
+### fn spec.managedResources.withCreator
+
+```ts
+withCreator(creator)
+```
+
+"ResourceCreatorRole defines the resource creator."
+
+### fn spec.managedResources.withDeleted
+
+```ts
+withDeleted(deleted)
+```
+
+"Deleted marks the resource to be deleted"
+
+### fn spec.managedResources.withEnv
+
+```ts
+withEnv(env)
+```
+
+
+
+### fn spec.managedResources.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.managedResources.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.managedResources.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.managedResources.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.managedResources.withRaw
+
+```ts
+withRaw(raw)
+```
+
+
+
+### fn spec.managedResources.withRawMixin
+
+```ts
+withRawMixin(raw)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.managedResources.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.managedResources.withTrait
+
+```ts
+withTrait(trait)
+```
+
+
+
+### fn spec.managedResources.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"

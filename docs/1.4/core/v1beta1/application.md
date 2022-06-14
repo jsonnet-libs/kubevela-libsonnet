@@ -22,8 +22,6 @@ permalink: /1.4/core/v1beta1/application/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -36,10 +34,79 @@ permalink: /1.4/core/v1beta1/application/
   * [`fn withComponentsMixin(components)`](#fn-specwithcomponentsmixin)
   * [`fn withPolicies(policies)`](#fn-specwithpolicies)
   * [`fn withPoliciesMixin(policies)`](#fn-specwithpoliciesmixin)
+  * [`obj spec.components`](#obj-speccomponents)
+    * [`fn withDependsOn(dependsOn)`](#fn-speccomponentswithdependson)
+    * [`fn withDependsOnMixin(dependsOn)`](#fn-speccomponentswithdependsonmixin)
+    * [`fn withExternalRevision(externalRevision)`](#fn-speccomponentswithexternalrevision)
+    * [`fn withInputs(inputs)`](#fn-speccomponentswithinputs)
+    * [`fn withInputsMixin(inputs)`](#fn-speccomponentswithinputsmixin)
+    * [`fn withName(name)`](#fn-speccomponentswithname)
+    * [`fn withOutputs(outputs)`](#fn-speccomponentswithoutputs)
+    * [`fn withOutputsMixin(outputs)`](#fn-speccomponentswithoutputsmixin)
+    * [`fn withProperties(properties)`](#fn-speccomponentswithproperties)
+    * [`fn withPropertiesMixin(properties)`](#fn-speccomponentswithpropertiesmixin)
+    * [`fn withScopes(scopes)`](#fn-speccomponentswithscopes)
+    * [`fn withScopesMixin(scopes)`](#fn-speccomponentswithscopesmixin)
+    * [`fn withTraits(traits)`](#fn-speccomponentswithtraits)
+    * [`fn withTraitsMixin(traits)`](#fn-speccomponentswithtraitsmixin)
+    * [`fn withType(type)`](#fn-speccomponentswithtype)
+    * [`obj spec.components.inputs`](#obj-speccomponentsinputs)
+      * [`fn withFrom(from)`](#fn-speccomponentsinputswithfrom)
+      * [`fn withParameterKey(parameterKey)`](#fn-speccomponentsinputswithparameterkey)
+    * [`obj spec.components.outputs`](#obj-speccomponentsoutputs)
+      * [`fn withName(name)`](#fn-speccomponentsoutputswithname)
+      * [`fn withValueFrom(valueFrom)`](#fn-speccomponentsoutputswithvaluefrom)
+    * [`obj spec.components.traits`](#obj-speccomponentstraits)
+      * [`fn withProperties(properties)`](#fn-speccomponentstraitswithproperties)
+      * [`fn withPropertiesMixin(properties)`](#fn-speccomponentstraitswithpropertiesmixin)
+      * [`fn withType(type)`](#fn-speccomponentstraitswithtype)
+  * [`obj spec.policies`](#obj-specpolicies)
+    * [`fn withName(name)`](#fn-specpolicieswithname)
+    * [`fn withProperties(properties)`](#fn-specpolicieswithproperties)
+    * [`fn withPropertiesMixin(properties)`](#fn-specpolicieswithpropertiesmixin)
+    * [`fn withType(type)`](#fn-specpolicieswithtype)
   * [`obj spec.workflow`](#obj-specworkflow)
     * [`fn withRef(ref)`](#fn-specworkflowwithref)
     * [`fn withSteps(steps)`](#fn-specworkflowwithsteps)
     * [`fn withStepsMixin(steps)`](#fn-specworkflowwithstepsmixin)
+    * [`obj spec.workflow.steps`](#obj-specworkflowsteps)
+      * [`fn withDependsOn(dependsOn)`](#fn-specworkflowstepswithdependson)
+      * [`fn withDependsOnMixin(dependsOn)`](#fn-specworkflowstepswithdependsonmixin)
+      * [`fn withIf(If)`](#fn-specworkflowstepswithif)
+      * [`fn withInputs(inputs)`](#fn-specworkflowstepswithinputs)
+      * [`fn withInputsMixin(inputs)`](#fn-specworkflowstepswithinputsmixin)
+      * [`fn withName(name)`](#fn-specworkflowstepswithname)
+      * [`fn withOutputs(outputs)`](#fn-specworkflowstepswithoutputs)
+      * [`fn withOutputsMixin(outputs)`](#fn-specworkflowstepswithoutputsmixin)
+      * [`fn withProperties(properties)`](#fn-specworkflowstepswithproperties)
+      * [`fn withPropertiesMixin(properties)`](#fn-specworkflowstepswithpropertiesmixin)
+      * [`fn withSubSteps(subSteps)`](#fn-specworkflowstepswithsubsteps)
+      * [`fn withSubStepsMixin(subSteps)`](#fn-specworkflowstepswithsubstepsmixin)
+      * [`fn withType(type)`](#fn-specworkflowstepswithtype)
+      * [`obj spec.workflow.steps.inputs`](#obj-specworkflowstepsinputs)
+        * [`fn withFrom(from)`](#fn-specworkflowstepsinputswithfrom)
+        * [`fn withParameterKey(parameterKey)`](#fn-specworkflowstepsinputswithparameterkey)
+      * [`obj spec.workflow.steps.outputs`](#obj-specworkflowstepsoutputs)
+        * [`fn withName(name)`](#fn-specworkflowstepsoutputswithname)
+        * [`fn withValueFrom(valueFrom)`](#fn-specworkflowstepsoutputswithvaluefrom)
+      * [`obj spec.workflow.steps.subSteps`](#obj-specworkflowstepssubsteps)
+        * [`fn withDependsOn(dependsOn)`](#fn-specworkflowstepssubstepswithdependson)
+        * [`fn withDependsOnMixin(dependsOn)`](#fn-specworkflowstepssubstepswithdependsonmixin)
+        * [`fn withIf(If)`](#fn-specworkflowstepssubstepswithif)
+        * [`fn withInputs(inputs)`](#fn-specworkflowstepssubstepswithinputs)
+        * [`fn withInputsMixin(inputs)`](#fn-specworkflowstepssubstepswithinputsmixin)
+        * [`fn withName(name)`](#fn-specworkflowstepssubstepswithname)
+        * [`fn withOutputs(outputs)`](#fn-specworkflowstepssubstepswithoutputs)
+        * [`fn withOutputsMixin(outputs)`](#fn-specworkflowstepssubstepswithoutputsmixin)
+        * [`fn withProperties(properties)`](#fn-specworkflowstepssubstepswithproperties)
+        * [`fn withPropertiesMixin(properties)`](#fn-specworkflowstepssubstepswithpropertiesmixin)
+        * [`fn withType(type)`](#fn-specworkflowstepssubstepswithtype)
+        * [`obj spec.workflow.steps.subSteps.inputs`](#obj-specworkflowstepssubstepsinputs)
+          * [`fn withFrom(from)`](#fn-specworkflowstepssubstepsinputswithfrom)
+          * [`fn withParameterKey(parameterKey)`](#fn-specworkflowstepssubstepsinputswithparameterkey)
+        * [`obj spec.workflow.steps.subSteps.outputs`](#obj-specworkflowstepssubstepsoutputs)
+          * [`fn withName(name)`](#fn-specworkflowstepssubstepsoutputswithname)
+          * [`fn withValueFrom(valueFrom)`](#fn-specworkflowstepssubstepsoutputswithvaluefrom)
 
 ## Fields
 
@@ -157,24 +224,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -273,6 +322,250 @@ withPoliciesMixin(policies)
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.components
+
+
+
+### fn spec.components.withDependsOn
+
+```ts
+withDependsOn(dependsOn)
+```
+
+
+
+### fn spec.components.withDependsOnMixin
+
+```ts
+withDependsOnMixin(dependsOn)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withExternalRevision
+
+```ts
+withExternalRevision(externalRevision)
+```
+
+"ExternalRevision specified the component revisionName"
+
+### fn spec.components.withInputs
+
+```ts
+withInputs(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.components.withInputsMixin
+
+```ts
+withInputsMixin(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.components.withOutputs
+
+```ts
+withOutputs(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.components.withOutputsMixin
+
+```ts
+withOutputsMixin(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.components.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withScopes
+
+```ts
+withScopes(scopes)
+```
+
+"scopes in ApplicationComponent defines the component-level scopes the format is <scope-type:scope-instance-name> pairs, the key represents type of `ScopeDefinition` while the value represent the name of scope instance."
+
+### fn spec.components.withScopesMixin
+
+```ts
+withScopesMixin(scopes)
+```
+
+"scopes in ApplicationComponent defines the component-level scopes the format is <scope-type:scope-instance-name> pairs, the key represents type of `ScopeDefinition` while the value represent the name of scope instance."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withTraits
+
+```ts
+withTraits(traits)
+```
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+### fn spec.components.withTraitsMixin
+
+```ts
+withTraitsMixin(traits)
+```
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.components.inputs
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.components.inputs.withFrom
+
+```ts
+withFrom(from)
+```
+
+
+
+### fn spec.components.inputs.withParameterKey
+
+```ts
+withParameterKey(parameterKey)
+```
+
+
+
+## obj spec.components.outputs
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.components.outputs.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.components.outputs.withValueFrom
+
+```ts
+withValueFrom(valueFrom)
+```
+
+
+
+## obj spec.components.traits
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+### fn spec.components.traits.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.components.traits.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.components.traits.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.policies
+
+"Policies defines the global policies for all components in the app, e.g. security, metrics, gitops, multi-cluster placement rules, etc. Policies are applied after components are rendered and before workflow steps are executed."
+
+### fn spec.policies.withName
+
+```ts
+withName(name)
+```
+
+"Name is the unique name of the policy."
+
+### fn spec.policies.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.policies.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.policies.withType
+
+```ts
+withType(type)
+```
+
+
+
 ## obj spec.workflow
 
 "Workflow defines how to customize the control logic. If workflow is specified, Vela won't apply any resource, but provide rendered output in AppRevision. Workflow steps are executed in array order, and each step: - will have a context in annotation. - should mark \"finish\" phase in status.conditions."
@@ -302,3 +595,300 @@ withStepsMixin(steps)
 
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.workflow.steps
+
+
+
+### fn spec.workflow.steps.withDependsOn
+
+```ts
+withDependsOn(dependsOn)
+```
+
+
+
+### fn spec.workflow.steps.withDependsOnMixin
+
+```ts
+withDependsOnMixin(dependsOn)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.withIf
+
+```ts
+withIf(If)
+```
+
+
+
+### fn spec.workflow.steps.withInputs
+
+```ts
+withInputs(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.workflow.steps.withInputsMixin
+
+```ts
+withInputsMixin(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.withName
+
+```ts
+withName(name)
+```
+
+"Name is the unique name of the workflow step."
+
+### fn spec.workflow.steps.withOutputs
+
+```ts
+withOutputs(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.workflow.steps.withOutputsMixin
+
+```ts
+withOutputsMixin(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.workflow.steps.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.withSubSteps
+
+```ts
+withSubSteps(subSteps)
+```
+
+
+
+### fn spec.workflow.steps.withSubStepsMixin
+
+```ts
+withSubStepsMixin(subSteps)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.workflow.steps.inputs
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.workflow.steps.inputs.withFrom
+
+```ts
+withFrom(from)
+```
+
+
+
+### fn spec.workflow.steps.inputs.withParameterKey
+
+```ts
+withParameterKey(parameterKey)
+```
+
+
+
+## obj spec.workflow.steps.outputs
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.workflow.steps.outputs.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.workflow.steps.outputs.withValueFrom
+
+```ts
+withValueFrom(valueFrom)
+```
+
+
+
+## obj spec.workflow.steps.subSteps
+
+
+
+### fn spec.workflow.steps.subSteps.withDependsOn
+
+```ts
+withDependsOn(dependsOn)
+```
+
+
+
+### fn spec.workflow.steps.subSteps.withDependsOnMixin
+
+```ts
+withDependsOnMixin(dependsOn)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.subSteps.withIf
+
+```ts
+withIf(If)
+```
+
+
+
+### fn spec.workflow.steps.subSteps.withInputs
+
+```ts
+withInputs(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.workflow.steps.subSteps.withInputsMixin
+
+```ts
+withInputsMixin(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.subSteps.withName
+
+```ts
+withName(name)
+```
+
+"Name is the unique name of the workflow step."
+
+### fn spec.workflow.steps.subSteps.withOutputs
+
+```ts
+withOutputs(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.workflow.steps.subSteps.withOutputsMixin
+
+```ts
+withOutputsMixin(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.subSteps.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.workflow.steps.subSteps.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflow.steps.subSteps.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.workflow.steps.subSteps.inputs
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.workflow.steps.subSteps.inputs.withFrom
+
+```ts
+withFrom(from)
+```
+
+
+
+### fn spec.workflow.steps.subSteps.inputs.withParameterKey
+
+```ts
+withParameterKey(parameterKey)
+```
+
+
+
+## obj spec.workflow.steps.subSteps.outputs
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.workflow.steps.subSteps.outputs.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.workflow.steps.subSteps.outputs.withValueFrom
+
+```ts
+withValueFrom(valueFrom)
+```
+

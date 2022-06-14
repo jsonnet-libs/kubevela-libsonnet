@@ -1,10 +1,10 @@
 ---
-permalink: /1.4/core/v1alpha2/manualScalerTrait/
+permalink: /1.4/core/v1alpha2/healthScope/
 ---
 
-# core.v1alpha2.manualScalerTrait
+# core.v1alpha2.healthScope
 
-"A ManualScalerTrait determines how many replicas a workload should have."
+"A HealthScope determines an aggregate health status based of the health of components."
 
 ## Index
 
@@ -30,15 +30,44 @@ permalink: /1.4/core/v1alpha2/manualScalerTrait/
   * [`fn withSelfLink(selfLink)`](#fn-metadatawithselflink)
   * [`fn withUid(uid)`](#fn-metadatawithuid)
 * [`obj spec`](#obj-spec)
-  * [`fn withReplicaCount(replicaCount)`](#fn-specwithreplicacount)
-  * [`obj spec.workloadRef`](#obj-specworkloadref)
-    * [`fn withApiVersion(apiVersion)`](#fn-specworkloadrefwithapiversion)
-    * [`fn withFieldPath(fieldPath)`](#fn-specworkloadrefwithfieldpath)
-    * [`fn withKind(kind)`](#fn-specworkloadrefwithkind)
-    * [`fn withName(name)`](#fn-specworkloadrefwithname)
-    * [`fn withNamespace(namespace)`](#fn-specworkloadrefwithnamespace)
-    * [`fn withResourceVersion(resourceVersion)`](#fn-specworkloadrefwithresourceversion)
-    * [`fn withUid(uid)`](#fn-specworkloadrefwithuid)
+  * [`fn withAppReferences(appReferences)`](#fn-specwithappreferences)
+  * [`fn withAppReferencesMixin(appReferences)`](#fn-specwithappreferencesmixin)
+  * [`fn withProbe-Interval(probe_interval)`](#fn-specwithprobe-interval)
+  * [`fn withProbe-Timeout(probe_timeout)`](#fn-specwithprobe-timeout)
+  * [`fn withWorkloadRefs(workloadRefs)`](#fn-specwithworkloadrefs)
+  * [`fn withWorkloadRefsMixin(workloadRefs)`](#fn-specwithworkloadrefsmixin)
+  * [`obj spec.appReferences`](#obj-specappreferences)
+    * [`fn withAppName(appName)`](#fn-specappreferenceswithappname)
+    * [`fn withCompReferences(compReferences)`](#fn-specappreferenceswithcompreferences)
+    * [`fn withCompReferencesMixin(compReferences)`](#fn-specappreferenceswithcompreferencesmixin)
+    * [`obj spec.appReferences.compReferences`](#obj-specappreferencescompreferences)
+      * [`fn withCompName(compName)`](#fn-specappreferencescompreferenceswithcompname)
+      * [`fn withTraits(traits)`](#fn-specappreferencescompreferenceswithtraits)
+      * [`fn withTraitsMixin(traits)`](#fn-specappreferencescompreferenceswithtraitsmixin)
+      * [`obj spec.appReferences.compReferences.traits`](#obj-specappreferencescompreferencestraits)
+        * [`fn withApiVersion(apiVersion)`](#fn-specappreferencescompreferencestraitswithapiversion)
+        * [`fn withFieldPath(fieldPath)`](#fn-specappreferencescompreferencestraitswithfieldpath)
+        * [`fn withKind(kind)`](#fn-specappreferencescompreferencestraitswithkind)
+        * [`fn withName(name)`](#fn-specappreferencescompreferencestraitswithname)
+        * [`fn withNamespace(namespace)`](#fn-specappreferencescompreferencestraitswithnamespace)
+        * [`fn withResourceVersion(resourceVersion)`](#fn-specappreferencescompreferencestraitswithresourceversion)
+        * [`fn withUid(uid)`](#fn-specappreferencescompreferencestraitswithuid)
+      * [`obj spec.appReferences.compReferences.workload`](#obj-specappreferencescompreferencesworkload)
+        * [`fn withApiVersion(apiVersion)`](#fn-specappreferencescompreferencesworkloadwithapiversion)
+        * [`fn withFieldPath(fieldPath)`](#fn-specappreferencescompreferencesworkloadwithfieldpath)
+        * [`fn withKind(kind)`](#fn-specappreferencescompreferencesworkloadwithkind)
+        * [`fn withName(name)`](#fn-specappreferencescompreferencesworkloadwithname)
+        * [`fn withNamespace(namespace)`](#fn-specappreferencescompreferencesworkloadwithnamespace)
+        * [`fn withResourceVersion(resourceVersion)`](#fn-specappreferencescompreferencesworkloadwithresourceversion)
+        * [`fn withUid(uid)`](#fn-specappreferencescompreferencesworkloadwithuid)
+  * [`obj spec.workloadRefs`](#obj-specworkloadrefs)
+    * [`fn withApiVersion(apiVersion)`](#fn-specworkloadrefswithapiversion)
+    * [`fn withFieldPath(fieldPath)`](#fn-specworkloadrefswithfieldpath)
+    * [`fn withKind(kind)`](#fn-specworkloadrefswithkind)
+    * [`fn withName(name)`](#fn-specworkloadrefswithname)
+    * [`fn withNamespace(namespace)`](#fn-specworkloadrefswithnamespace)
+    * [`fn withResourceVersion(resourceVersion)`](#fn-specworkloadrefswithresourceversion)
+    * [`fn withUid(uid)`](#fn-specworkloadrefswithuid)
 
 ## Fields
 
@@ -48,7 +77,7 @@ permalink: /1.4/core/v1alpha2/manualScalerTrait/
 new(name)
 ```
 
-new returns an instance of ManualScalerTrait
+new returns an instance of HealthScope
 
 ## obj metadata
 
@@ -216,21 +245,125 @@ withUid(uid)
 
 ## obj spec
 
-"A ManualScalerTraitSpec defines the desired state of a ManualScalerTrait."
+"A HealthScopeSpec defines the desired state of a HealthScope."
 
-### fn spec.withReplicaCount
+### fn spec.withAppReferences
 
 ```ts
-withReplicaCount(replicaCount)
+withAppReferences(appReferences)
 ```
 
-"ReplicaCount of the workload this trait applies to."
+"AppRefs records references of applications' components"
 
-## obj spec.workloadRef
+### fn spec.withAppReferencesMixin
 
-"WorkloadReference to the workload this trait applies to."
+```ts
+withAppReferencesMixin(appReferences)
+```
 
-### fn spec.workloadRef.withApiVersion
+"AppRefs records references of applications' components"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.withProbe-Interval
+
+```ts
+withProbe-Interval(probe_interval)
+```
+
+"ProbeInterval is the amount of time in seconds between probing tries."
+
+### fn spec.withProbe-Timeout
+
+```ts
+withProbe-Timeout(probe_timeout)
+```
+
+"ProbeTimeout is the amount of time in seconds to wait when receiving a response before marked failure."
+
+### fn spec.withWorkloadRefs
+
+```ts
+withWorkloadRefs(workloadRefs)
+```
+
+"WorkloadReferences to the workloads that are in this scope."
+
+### fn spec.withWorkloadRefsMixin
+
+```ts
+withWorkloadRefsMixin(workloadRefs)
+```
+
+"WorkloadReferences to the workloads that are in this scope."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.appReferences
+
+"AppRefs records references of applications' components"
+
+### fn spec.appReferences.withAppName
+
+```ts
+withAppName(appName)
+```
+
+
+
+### fn spec.appReferences.withCompReferences
+
+```ts
+withCompReferences(compReferences)
+```
+
+
+
+### fn spec.appReferences.withCompReferencesMixin
+
+```ts
+withCompReferencesMixin(compReferences)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.appReferences.compReferences
+
+
+
+### fn spec.appReferences.compReferences.withCompName
+
+```ts
+withCompName(compName)
+```
+
+
+
+### fn spec.appReferences.compReferences.withTraits
+
+```ts
+withTraits(traits)
+```
+
+
+
+### fn spec.appReferences.compReferences.withTraitsMixin
+
+```ts
+withTraitsMixin(traits)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.appReferences.compReferences.traits
+
+
+
+### fn spec.appReferences.compReferences.traits.withApiVersion
 
 ```ts
 withApiVersion(apiVersion)
@@ -238,7 +371,7 @@ withApiVersion(apiVersion)
 
 "API version of the referent."
 
-### fn spec.workloadRef.withFieldPath
+### fn spec.appReferences.compReferences.traits.withFieldPath
 
 ```ts
 withFieldPath(fieldPath)
@@ -246,7 +379,7 @@ withFieldPath(fieldPath)
 
 "If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
 
-### fn spec.workloadRef.withKind
+### fn spec.appReferences.compReferences.traits.withKind
 
 ```ts
 withKind(kind)
@@ -254,7 +387,7 @@ withKind(kind)
 
 "Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
 
-### fn spec.workloadRef.withName
+### fn spec.appReferences.compReferences.traits.withName
 
 ```ts
 withName(name)
@@ -262,7 +395,7 @@ withName(name)
 
 "Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
 
-### fn spec.workloadRef.withNamespace
+### fn spec.appReferences.compReferences.traits.withNamespace
 
 ```ts
 withNamespace(namespace)
@@ -270,7 +403,7 @@ withNamespace(namespace)
 
 "Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
 
-### fn spec.workloadRef.withResourceVersion
+### fn spec.appReferences.compReferences.traits.withResourceVersion
 
 ```ts
 withResourceVersion(resourceVersion)
@@ -278,7 +411,127 @@ withResourceVersion(resourceVersion)
 
 "Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
-### fn spec.workloadRef.withUid
+### fn spec.appReferences.compReferences.traits.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.appReferences.compReferences.workload
+
+"ObjectReference contains enough information to let you inspect or modify the referred object. --- New uses of this type are discouraged because of difficulty describing its usage when embedded in APIs.  1. Ignored fields.  It includes many fields which are not generally honored.  For instance, ResourceVersion and FieldPath are both very rarely valid in actual usage.  2. Invalid usage help.  It is impossible to add specific help for individual usage.  In most embedded usages, there are particular     restrictions like, \"must refer only to types A and B\" or \"UID not honored\" or \"name must be restricted\".     Those cannot be well described when embedded.  3. Inconsistent validation.  Because the usages are different, the validation rules are different by usage, which makes it hard for users to predict what will happen.  4. The fields are both imprecise and overly precise.  Kind is not a precise mapping to a URL. This can produce ambiguity     during interpretation and require a REST mapping.  In most cases, the dependency is on the group,resource tuple     and the version of the actual struct is irrelevant.  5. We cannot easily change it.  Because this type is embedded in many locations, updates to this type     will affect numerous schemas.  Don't make new APIs embed an underspecified API type they do not control. Instead of using this type, create a locally provided and used type that is well-focused on your reference. For example, ServiceReferences for admission registration: https://github.com/kubernetes/api/blob/release-1.17/admissionregistration/v1/types.go#L533 ."
+
+### fn spec.appReferences.compReferences.workload.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.appReferences.compReferences.workload.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.appReferences.compReferences.workload.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.appReferences.compReferences.workload.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.appReferences.compReferences.workload.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.appReferences.compReferences.workload.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.appReferences.compReferences.workload.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.workloadRefs
+
+"WorkloadReferences to the workloads that are in this scope."
+
+### fn spec.workloadRefs.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.workloadRefs.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.workloadRefs.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.workloadRefs.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.workloadRefs.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.workloadRefs.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.workloadRefs.withUid
 
 ```ts
 withUid(uid)

@@ -22,8 +22,6 @@ permalink: /1.4/core/v1beta1/definitionRevision/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -54,6 +52,11 @@ permalink: /1.4/core/v1beta1/definitionRevision/
       * [`fn withExtensionMixin(extension)`](#fn-speccomponentdefinitionspecwithextensionmixin)
       * [`fn withPodSpecPath(podSpecPath)`](#fn-speccomponentdefinitionspecwithpodspecpath)
       * [`fn withRevisionLabel(revisionLabel)`](#fn-speccomponentdefinitionspecwithrevisionlabel)
+      * [`obj spec.componentDefinition.spec.childResourceKinds`](#obj-speccomponentdefinitionspecchildresourcekinds)
+        * [`fn withApiVersion(apiVersion)`](#fn-speccomponentdefinitionspecchildresourcekindswithapiversion)
+        * [`fn withKind(kind)`](#fn-speccomponentdefinitionspecchildresourcekindswithkind)
+        * [`fn withSelector(selector)`](#fn-speccomponentdefinitionspecchildresourcekindswithselector)
+        * [`fn withSelectorMixin(selector)`](#fn-speccomponentdefinitionspecchildresourcekindswithselectormixin)
       * [`obj spec.componentDefinition.spec.schematic`](#obj-speccomponentdefinitionspecschematic)
         * [`obj spec.componentDefinition.spec.schematic.cue`](#obj-speccomponentdefinitionspecschematiccue)
           * [`fn withTemplate(template)`](#fn-speccomponentdefinitionspecschematiccuewithtemplate)
@@ -67,6 +70,13 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`fn withParametersMixin(parameters)`](#fn-speccomponentdefinitionspecschematickubewithparametersmixin)
           * [`fn withTemplate(template)`](#fn-speccomponentdefinitionspecschematickubewithtemplate)
           * [`fn withTemplateMixin(template)`](#fn-speccomponentdefinitionspecschematickubewithtemplatemixin)
+          * [`obj spec.componentDefinition.spec.schematic.kube.parameters`](#obj-speccomponentdefinitionspecschematickubeparameters)
+            * [`fn withDescription(description)`](#fn-speccomponentdefinitionspecschematickubeparameterswithdescription)
+            * [`fn withFieldPaths(fieldPaths)`](#fn-speccomponentdefinitionspecschematickubeparameterswithfieldpaths)
+            * [`fn withFieldPathsMixin(fieldPaths)`](#fn-speccomponentdefinitionspecschematickubeparameterswithfieldpathsmixin)
+            * [`fn withName(name)`](#fn-speccomponentdefinitionspecschematickubeparameterswithname)
+            * [`fn withRequired(required)`](#fn-speccomponentdefinitionspecschematickubeparameterswithrequired)
+            * [`fn withType(type)`](#fn-speccomponentdefinitionspecschematickubeparameterswithtype)
         * [`obj spec.componentDefinition.spec.schematic.terraform`](#obj-speccomponentdefinitionspecschematicterraform)
           * [`fn withConfiguration(configuration)`](#fn-speccomponentdefinitionspecschematicterraformwithconfiguration)
           * [`fn withCustomRegion(customRegion)`](#fn-speccomponentdefinitionspecschematicterraformwithcustomregion)
@@ -114,6 +124,13 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`fn withParametersMixin(parameters)`](#fn-specpolicydefinitionspecschematickubewithparametersmixin)
           * [`fn withTemplate(template)`](#fn-specpolicydefinitionspecschematickubewithtemplate)
           * [`fn withTemplateMixin(template)`](#fn-specpolicydefinitionspecschematickubewithtemplatemixin)
+          * [`obj spec.policyDefinition.spec.schematic.kube.parameters`](#obj-specpolicydefinitionspecschematickubeparameters)
+            * [`fn withDescription(description)`](#fn-specpolicydefinitionspecschematickubeparameterswithdescription)
+            * [`fn withFieldPaths(fieldPaths)`](#fn-specpolicydefinitionspecschematickubeparameterswithfieldpaths)
+            * [`fn withFieldPathsMixin(fieldPaths)`](#fn-specpolicydefinitionspecschematickubeparameterswithfieldpathsmixin)
+            * [`fn withName(name)`](#fn-specpolicydefinitionspecschematickubeparameterswithname)
+            * [`fn withRequired(required)`](#fn-specpolicydefinitionspecschematickubeparameterswithrequired)
+            * [`fn withType(type)`](#fn-specpolicydefinitionspecschematickubeparameterswithtype)
         * [`obj spec.policyDefinition.spec.schematic.terraform`](#obj-specpolicydefinitionspecschematicterraform)
           * [`fn withConfiguration(configuration)`](#fn-specpolicydefinitionspecschematicterraformwithconfiguration)
           * [`fn withCustomRegion(customRegion)`](#fn-specpolicydefinitionspecschematicterraformwithcustomregion)
@@ -167,6 +184,13 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`fn withParametersMixin(parameters)`](#fn-spectraitdefinitionspecschematickubewithparametersmixin)
           * [`fn withTemplate(template)`](#fn-spectraitdefinitionspecschematickubewithtemplate)
           * [`fn withTemplateMixin(template)`](#fn-spectraitdefinitionspecschematickubewithtemplatemixin)
+          * [`obj spec.traitDefinition.spec.schematic.kube.parameters`](#obj-spectraitdefinitionspecschematickubeparameters)
+            * [`fn withDescription(description)`](#fn-spectraitdefinitionspecschematickubeparameterswithdescription)
+            * [`fn withFieldPaths(fieldPaths)`](#fn-spectraitdefinitionspecschematickubeparameterswithfieldpaths)
+            * [`fn withFieldPathsMixin(fieldPaths)`](#fn-spectraitdefinitionspecschematickubeparameterswithfieldpathsmixin)
+            * [`fn withName(name)`](#fn-spectraitdefinitionspecschematickubeparameterswithname)
+            * [`fn withRequired(required)`](#fn-spectraitdefinitionspecschematickubeparameterswithrequired)
+            * [`fn withType(type)`](#fn-spectraitdefinitionspecschematickubeparameterswithtype)
         * [`obj spec.traitDefinition.spec.schematic.terraform`](#obj-spectraitdefinitionspecschematicterraform)
           * [`fn withConfiguration(configuration)`](#fn-spectraitdefinitionspecschematicterraformwithconfiguration)
           * [`fn withCustomRegion(customRegion)`](#fn-spectraitdefinitionspecschematicterraformwithcustomregion)
@@ -208,6 +232,13 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`fn withParametersMixin(parameters)`](#fn-specworkflowstepdefinitionspecschematickubewithparametersmixin)
           * [`fn withTemplate(template)`](#fn-specworkflowstepdefinitionspecschematickubewithtemplate)
           * [`fn withTemplateMixin(template)`](#fn-specworkflowstepdefinitionspecschematickubewithtemplatemixin)
+          * [`obj spec.workflowStepDefinition.spec.schematic.kube.parameters`](#obj-specworkflowstepdefinitionspecschematickubeparameters)
+            * [`fn withDescription(description)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithdescription)
+            * [`fn withFieldPaths(fieldPaths)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithfieldpaths)
+            * [`fn withFieldPathsMixin(fieldPaths)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithfieldpathsmixin)
+            * [`fn withName(name)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithname)
+            * [`fn withRequired(required)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithrequired)
+            * [`fn withType(type)`](#fn-specworkflowstepdefinitionspecschematickubeparameterswithtype)
         * [`obj spec.workflowStepDefinition.spec.schematic.terraform`](#obj-specworkflowstepdefinitionspecschematicterraform)
           * [`fn withConfiguration(configuration)`](#fn-specworkflowstepdefinitionspecschematicterraformwithconfiguration)
           * [`fn withCustomRegion(customRegion)`](#fn-specworkflowstepdefinitionspecschematicterraformwithcustomregion)
@@ -334,24 +365,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -591,6 +604,44 @@ withRevisionLabel(revisionLabel)
 
 "RevisionLabel indicates which label for underlying resources(e.g. pods) of this workload can be used by trait to create resource selectors(e.g. label selector for pods)."
 
+## obj spec.componentDefinition.spec.childResourceKinds
+
+"ChildResourceKinds are the list of GVK of the child resources this workload generates"
+
+### fn spec.componentDefinition.spec.childResourceKinds.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"APIVersion of the child resource"
+
+### fn spec.componentDefinition.spec.childResourceKinds.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the child resource"
+
+### fn spec.componentDefinition.spec.childResourceKinds.withSelector
+
+```ts
+withSelector(selector)
+```
+
+"Selector to select the child resources that the workload wants to expose to traits"
+
+### fn spec.componentDefinition.spec.childResourceKinds.withSelectorMixin
+
+```ts
+withSelectorMixin(selector)
+```
+
+"Selector to select the child resources that the workload wants to expose to traits"
+
+**Note:** This function appends passed data to existing values
+
 ## obj spec.componentDefinition.spec.schematic
 
 "Schematic defines the data format and template of the encapsulation of the workload"
@@ -686,6 +737,60 @@ withTemplateMixin(template)
 "Template defines the raw Kubernetes resource"
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.componentDefinition.spec.schematic.kube.parameters
+
+"Parameters defines configurable parameters"
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withDescription
+
+```ts
+withDescription(description)
+```
+
+"Description of this parameter."
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withFieldPaths
+
+```ts
+withFieldPaths(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withFieldPathsMixin
+
+```ts
+withFieldPathsMixin(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withName
+
+```ts
+withName(name)
+```
+
+"Name of this parameter"
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withRequired
+
+```ts
+withRequired(required)
+```
+
+"Required specifies whether or not a value for this parameter must be supplied when authoring an Application."
+
+### fn spec.componentDefinition.spec.schematic.kube.parameters.withType
+
+```ts
+withType(type)
+```
+
+"ValueType indicates the type of the parameter value, and only supports basic data types: string, number, boolean."
 
 ## obj spec.componentDefinition.spec.schematic.terraform
 
@@ -1024,6 +1129,60 @@ withTemplateMixin(template)
 "Template defines the raw Kubernetes resource"
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.policyDefinition.spec.schematic.kube.parameters
+
+"Parameters defines configurable parameters"
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withDescription
+
+```ts
+withDescription(description)
+```
+
+"Description of this parameter."
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withFieldPaths
+
+```ts
+withFieldPaths(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withFieldPathsMixin
+
+```ts
+withFieldPathsMixin(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withName
+
+```ts
+withName(name)
+```
+
+"Name of this parameter"
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withRequired
+
+```ts
+withRequired(required)
+```
+
+"Required specifies whether or not a value for this parameter must be supplied when authoring an Application."
+
+### fn spec.policyDefinition.spec.schematic.kube.parameters.withType
+
+```ts
+withType(type)
+```
+
+"ValueType indicates the type of the parameter value, and only supports basic data types: string, number, boolean."
 
 ## obj spec.policyDefinition.spec.schematic.terraform
 
@@ -1425,6 +1584,60 @@ withTemplateMixin(template)
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.traitDefinition.spec.schematic.kube.parameters
+
+"Parameters defines configurable parameters"
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withDescription
+
+```ts
+withDescription(description)
+```
+
+"Description of this parameter."
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withFieldPaths
+
+```ts
+withFieldPaths(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withFieldPathsMixin
+
+```ts
+withFieldPathsMixin(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withName
+
+```ts
+withName(name)
+```
+
+"Name of this parameter"
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withRequired
+
+```ts
+withRequired(required)
+```
+
+"Required specifies whether or not a value for this parameter must be supplied when authoring an Application."
+
+### fn spec.traitDefinition.spec.schematic.kube.parameters.withType
+
+```ts
+withType(type)
+```
+
+"ValueType indicates the type of the parameter value, and only supports basic data types: string, number, boolean."
+
 ## obj spec.traitDefinition.spec.schematic.terraform
 
 "Terraform is the struct to describe cloud resources managed by Hashicorp Terraform"
@@ -1722,6 +1935,60 @@ withTemplateMixin(template)
 "Template defines the raw Kubernetes resource"
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.workflowStepDefinition.spec.schematic.kube.parameters
+
+"Parameters defines configurable parameters"
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withDescription
+
+```ts
+withDescription(description)
+```
+
+"Description of this parameter."
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withFieldPaths
+
+```ts
+withFieldPaths(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withFieldPathsMixin
+
+```ts
+withFieldPathsMixin(fieldPaths)
+```
+
+"FieldPaths specifies an array of fields within this workload that will be overwritten by the value of this parameter. \tAll fields must be of the same type. Fields are specified as JSON field paths without a leading dot, for example 'spec.replicas'."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withName
+
+```ts
+withName(name)
+```
+
+"Name of this parameter"
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withRequired
+
+```ts
+withRequired(required)
+```
+
+"Required specifies whether or not a value for this parameter must be supplied when authoring an Application."
+
+### fn spec.workflowStepDefinition.spec.schematic.kube.parameters.withType
+
+```ts
+withType(type)
+```
+
+"ValueType indicates the type of the parameter value, and only supports basic data types: string, number, boolean."
 
 ## obj spec.workflowStepDefinition.spec.schematic.terraform
 

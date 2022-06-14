@@ -22,8 +22,6 @@ permalink: /1.4/core/v1alpha1/envBinding/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -37,6 +35,49 @@ permalink: /1.4/core/v1alpha1/envBinding/
   * [`fn withEngine(engine)`](#fn-specwithengine)
   * [`fn withEnvs(envs)`](#fn-specwithenvs)
   * [`fn withEnvsMixin(envs)`](#fn-specwithenvsmixin)
+  * [`obj spec.envs`](#obj-specenvs)
+    * [`fn withName(name)`](#fn-specenvswithname)
+    * [`obj spec.envs.patch`](#obj-specenvspatch)
+      * [`fn withComponents(components)`](#fn-specenvspatchwithcomponents)
+      * [`fn withComponentsMixin(components)`](#fn-specenvspatchwithcomponentsmixin)
+      * [`obj spec.envs.patch.components`](#obj-specenvspatchcomponents)
+        * [`fn withDependsOn(dependsOn)`](#fn-specenvspatchcomponentswithdependson)
+        * [`fn withDependsOnMixin(dependsOn)`](#fn-specenvspatchcomponentswithdependsonmixin)
+        * [`fn withExternalRevision(externalRevision)`](#fn-specenvspatchcomponentswithexternalrevision)
+        * [`fn withInputs(inputs)`](#fn-specenvspatchcomponentswithinputs)
+        * [`fn withInputsMixin(inputs)`](#fn-specenvspatchcomponentswithinputsmixin)
+        * [`fn withName(name)`](#fn-specenvspatchcomponentswithname)
+        * [`fn withOutputs(outputs)`](#fn-specenvspatchcomponentswithoutputs)
+        * [`fn withOutputsMixin(outputs)`](#fn-specenvspatchcomponentswithoutputsmixin)
+        * [`fn withProperties(properties)`](#fn-specenvspatchcomponentswithproperties)
+        * [`fn withPropertiesMixin(properties)`](#fn-specenvspatchcomponentswithpropertiesmixin)
+        * [`fn withScopes(scopes)`](#fn-specenvspatchcomponentswithscopes)
+        * [`fn withScopesMixin(scopes)`](#fn-specenvspatchcomponentswithscopesmixin)
+        * [`fn withTraits(traits)`](#fn-specenvspatchcomponentswithtraits)
+        * [`fn withTraitsMixin(traits)`](#fn-specenvspatchcomponentswithtraitsmixin)
+        * [`fn withType(type)`](#fn-specenvspatchcomponentswithtype)
+        * [`obj spec.envs.patch.components.inputs`](#obj-specenvspatchcomponentsinputs)
+          * [`fn withFrom(from)`](#fn-specenvspatchcomponentsinputswithfrom)
+          * [`fn withParameterKey(parameterKey)`](#fn-specenvspatchcomponentsinputswithparameterkey)
+        * [`obj spec.envs.patch.components.outputs`](#obj-specenvspatchcomponentsoutputs)
+          * [`fn withName(name)`](#fn-specenvspatchcomponentsoutputswithname)
+          * [`fn withValueFrom(valueFrom)`](#fn-specenvspatchcomponentsoutputswithvaluefrom)
+        * [`obj spec.envs.patch.components.traits`](#obj-specenvspatchcomponentstraits)
+          * [`fn withProperties(properties)`](#fn-specenvspatchcomponentstraitswithproperties)
+          * [`fn withPropertiesMixin(properties)`](#fn-specenvspatchcomponentstraitswithpropertiesmixin)
+          * [`fn withType(type)`](#fn-specenvspatchcomponentstraitswithtype)
+    * [`obj spec.envs.placement`](#obj-specenvsplacement)
+      * [`obj spec.envs.placement.clusterSelector`](#obj-specenvsplacementclusterselector)
+        * [`fn withLabels(labels)`](#fn-specenvsplacementclusterselectorwithlabels)
+        * [`fn withLabelsMixin(labels)`](#fn-specenvsplacementclusterselectorwithlabelsmixin)
+        * [`fn withName(name)`](#fn-specenvsplacementclusterselectorwithname)
+      * [`obj spec.envs.placement.namespaceSelector`](#obj-specenvsplacementnamespaceselector)
+        * [`fn withLabels(labels)`](#fn-specenvsplacementnamespaceselectorwithlabels)
+        * [`fn withLabelsMixin(labels)`](#fn-specenvsplacementnamespaceselectorwithlabelsmixin)
+        * [`fn withName(name)`](#fn-specenvsplacementnamespaceselectorwithname)
+    * [`obj spec.envs.selector`](#obj-specenvsselector)
+      * [`fn withComponents(components)`](#fn-specenvsselectorwithcomponents)
+      * [`fn withComponentsMixin(components)`](#fn-specenvsselectorwithcomponentsmixin)
   * [`obj spec.outputResourcesTo`](#obj-specoutputresourcesto)
     * [`fn withName(name)`](#fn-specoutputresourcestowithname)
     * [`fn withNamespace(namespace)`](#fn-specoutputresourcestowithnamespace)
@@ -157,24 +198,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -275,6 +298,332 @@ withEnvs(envs)
 
 ```ts
 withEnvsMixin(envs)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.envs
+
+
+
+### fn spec.envs.withName
+
+```ts
+withName(name)
+```
+
+
+
+## obj spec.envs.patch
+
+"EnvPatch specify the parameter configuration for different environments"
+
+### fn spec.envs.patch.withComponents
+
+```ts
+withComponents(components)
+```
+
+
+
+### fn spec.envs.patch.withComponentsMixin
+
+```ts
+withComponentsMixin(components)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.envs.patch.components
+
+
+
+### fn spec.envs.patch.components.withDependsOn
+
+```ts
+withDependsOn(dependsOn)
+```
+
+
+
+### fn spec.envs.patch.components.withDependsOnMixin
+
+```ts
+withDependsOnMixin(dependsOn)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withExternalRevision
+
+```ts
+withExternalRevision(externalRevision)
+```
+
+"ExternalRevision specified the component revisionName"
+
+### fn spec.envs.patch.components.withInputs
+
+```ts
+withInputs(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.envs.patch.components.withInputsMixin
+
+```ts
+withInputsMixin(inputs)
+```
+
+"StepInputs defines variable input of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.envs.patch.components.withOutputs
+
+```ts
+withOutputs(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.envs.patch.components.withOutputsMixin
+
+```ts
+withOutputsMixin(outputs)
+```
+
+"StepOutputs defines output variable of WorkflowStep"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.envs.patch.components.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withScopes
+
+```ts
+withScopes(scopes)
+```
+
+"scopes in ApplicationComponent defines the component-level scopes the format is <scope-type:scope-instance-name> pairs, the key represents type of `ScopeDefinition` while the value represent the name of scope instance."
+
+### fn spec.envs.patch.components.withScopesMixin
+
+```ts
+withScopesMixin(scopes)
+```
+
+"scopes in ApplicationComponent defines the component-level scopes the format is <scope-type:scope-instance-name> pairs, the key represents type of `ScopeDefinition` while the value represent the name of scope instance."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withTraits
+
+```ts
+withTraits(traits)
+```
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+### fn spec.envs.patch.components.withTraitsMixin
+
+```ts
+withTraitsMixin(traits)
+```
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.envs.patch.components.inputs
+
+"StepInputs defines variable input of WorkflowStep"
+
+### fn spec.envs.patch.components.inputs.withFrom
+
+```ts
+withFrom(from)
+```
+
+
+
+### fn spec.envs.patch.components.inputs.withParameterKey
+
+```ts
+withParameterKey(parameterKey)
+```
+
+
+
+## obj spec.envs.patch.components.outputs
+
+"StepOutputs defines output variable of WorkflowStep"
+
+### fn spec.envs.patch.components.outputs.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.envs.patch.components.outputs.withValueFrom
+
+```ts
+withValueFrom(valueFrom)
+```
+
+
+
+## obj spec.envs.patch.components.traits
+
+"Traits define the trait of one component, the type must be array to keep the order."
+
+### fn spec.envs.patch.components.traits.withProperties
+
+```ts
+withProperties(properties)
+```
+
+
+
+### fn spec.envs.patch.components.traits.withPropertiesMixin
+
+```ts
+withPropertiesMixin(properties)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.patch.components.traits.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.envs.placement
+
+"EnvPlacement defines the placement rules for an app."
+
+## obj spec.envs.placement.clusterSelector
+
+"ClusterSelector defines the rules to select a Cluster resource. Either name or labels is needed."
+
+### fn spec.envs.placement.clusterSelector.withLabels
+
+```ts
+withLabels(labels)
+```
+
+"Labels defines the label selector to select the cluster."
+
+### fn spec.envs.placement.clusterSelector.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+"Labels defines the label selector to select the cluster."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.placement.clusterSelector.withName
+
+```ts
+withName(name)
+```
+
+"Name is the name of the cluster."
+
+## obj spec.envs.placement.namespaceSelector
+
+"NamespaceSelector defines the rules to select a Namespace resource. Either name or labels is needed."
+
+### fn spec.envs.placement.namespaceSelector.withLabels
+
+```ts
+withLabels(labels)
+```
+
+"Labels defines the label selector to select the namespace."
+
+### fn spec.envs.placement.namespaceSelector.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+"Labels defines the label selector to select the namespace."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.envs.placement.namespaceSelector.withName
+
+```ts
+withName(name)
+```
+
+"Name is the name of the namespace."
+
+## obj spec.envs.selector
+
+"EnvSelector defines which components should this env contains"
+
+### fn spec.envs.selector.withComponents
+
+```ts
+withComponents(components)
+```
+
+
+
+### fn spec.envs.selector.withComponentsMixin
+
+```ts
+withComponentsMixin(components)
 ```
 
 

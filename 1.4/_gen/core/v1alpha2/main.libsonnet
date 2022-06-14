@@ -4,6 +4,7 @@
   application: (import 'application.libsonnet'),
   applicationRevision: (import 'applicationRevision.libsonnet'),
   componentDefinition: (import 'componentDefinition.libsonnet'),
+  healthScope: (import 'healthScope.libsonnet'),
   manualScalerTrait: (import 'manualScalerTrait.libsonnet'),
   scopeDefinition: (import 'scopeDefinition.libsonnet'),
   traitDefinition: (import 'traitDefinition.libsonnet'),

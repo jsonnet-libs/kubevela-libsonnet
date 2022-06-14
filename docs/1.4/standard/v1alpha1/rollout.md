@@ -22,8 +22,6 @@ permalink: /1.4/standard/v1alpha1/rollout/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -47,6 +45,62 @@ permalink: /1.4/standard/v1alpha1/rollout/
     * [`fn withRolloutWebhooks(rolloutWebhooks)`](#fn-specrolloutplanwithrolloutwebhooks)
     * [`fn withRolloutWebhooksMixin(rolloutWebhooks)`](#fn-specrolloutplanwithrolloutwebhooksmixin)
     * [`fn withTargetSize(targetSize)`](#fn-specrolloutplanwithtargetsize)
+    * [`obj spec.rolloutPlan.canaryMetric`](#obj-specrolloutplancanarymetric)
+      * [`fn withInterval(interval)`](#fn-specrolloutplancanarymetricwithinterval)
+      * [`fn withName(name)`](#fn-specrolloutplancanarymetricwithname)
+      * [`obj spec.rolloutPlan.canaryMetric.metricsRange`](#obj-specrolloutplancanarymetricmetricsrange)
+        * [`fn withMax(max)`](#fn-specrolloutplancanarymetricmetricsrangewithmax)
+        * [`fn withMin(min)`](#fn-specrolloutplancanarymetricmetricsrangewithmin)
+      * [`obj spec.rolloutPlan.canaryMetric.templateRef`](#obj-specrolloutplancanarymetrictemplateref)
+        * [`fn withApiVersion(apiVersion)`](#fn-specrolloutplancanarymetrictemplaterefwithapiversion)
+        * [`fn withFieldPath(fieldPath)`](#fn-specrolloutplancanarymetrictemplaterefwithfieldpath)
+        * [`fn withKind(kind)`](#fn-specrolloutplancanarymetrictemplaterefwithkind)
+        * [`fn withName(name)`](#fn-specrolloutplancanarymetrictemplaterefwithname)
+        * [`fn withNamespace(namespace)`](#fn-specrolloutplancanarymetrictemplaterefwithnamespace)
+        * [`fn withResourceVersion(resourceVersion)`](#fn-specrolloutplancanarymetrictemplaterefwithresourceversion)
+        * [`fn withUid(uid)`](#fn-specrolloutplancanarymetrictemplaterefwithuid)
+    * [`obj spec.rolloutPlan.rolloutBatches`](#obj-specrolloutplanrolloutbatches)
+      * [`fn withBatchRolloutWebhooks(batchRolloutWebhooks)`](#fn-specrolloutplanrolloutbatcheswithbatchrolloutwebhooks)
+      * [`fn withBatchRolloutWebhooksMixin(batchRolloutWebhooks)`](#fn-specrolloutplanrolloutbatcheswithbatchrolloutwebhooksmixin)
+      * [`fn withCanaryMetric(canaryMetric)`](#fn-specrolloutplanrolloutbatcheswithcanarymetric)
+      * [`fn withCanaryMetricMixin(canaryMetric)`](#fn-specrolloutplanrolloutbatcheswithcanarymetricmixin)
+      * [`fn withInstanceInterval(instanceInterval)`](#fn-specrolloutplanrolloutbatcheswithinstanceinterval)
+      * [`fn withMaxUnavailable(maxUnavailable)`](#fn-specrolloutplanrolloutbatcheswithmaxunavailable)
+      * [`fn withPodList(podList)`](#fn-specrolloutplanrolloutbatcheswithpodlist)
+      * [`fn withPodListMixin(podList)`](#fn-specrolloutplanrolloutbatcheswithpodlistmixin)
+      * [`fn withReplicas(replicas)`](#fn-specrolloutplanrolloutbatcheswithreplicas)
+      * [`obj spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks`](#obj-specrolloutplanrolloutbatchesbatchrolloutwebhooks)
+        * [`fn withExpectedStatus(expectedStatus)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithexpectedstatus)
+        * [`fn withExpectedStatusMixin(expectedStatus)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithexpectedstatusmixin)
+        * [`fn withMetadata(metadata)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithmetadata)
+        * [`fn withMetadataMixin(metadata)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithmetadatamixin)
+        * [`fn withMethod(method)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithmethod)
+        * [`fn withName(name)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithname)
+        * [`fn withType(type)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithtype)
+        * [`fn withUrl(url)`](#fn-specrolloutplanrolloutbatchesbatchrolloutwebhookswithurl)
+      * [`obj spec.rolloutPlan.rolloutBatches.canaryMetric`](#obj-specrolloutplanrolloutbatchescanarymetric)
+        * [`fn withInterval(interval)`](#fn-specrolloutplanrolloutbatchescanarymetricwithinterval)
+        * [`fn withName(name)`](#fn-specrolloutplanrolloutbatchescanarymetricwithname)
+        * [`obj spec.rolloutPlan.rolloutBatches.canaryMetric.metricsRange`](#obj-specrolloutplanrolloutbatchescanarymetricmetricsrange)
+          * [`fn withMax(max)`](#fn-specrolloutplanrolloutbatchescanarymetricmetricsrangewithmax)
+          * [`fn withMin(min)`](#fn-specrolloutplanrolloutbatchescanarymetricmetricsrangewithmin)
+        * [`obj spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef`](#obj-specrolloutplanrolloutbatchescanarymetrictemplateref)
+          * [`fn withApiVersion(apiVersion)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithapiversion)
+          * [`fn withFieldPath(fieldPath)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithfieldpath)
+          * [`fn withKind(kind)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithkind)
+          * [`fn withName(name)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithname)
+          * [`fn withNamespace(namespace)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithnamespace)
+          * [`fn withResourceVersion(resourceVersion)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithresourceversion)
+          * [`fn withUid(uid)`](#fn-specrolloutplanrolloutbatchescanarymetrictemplaterefwithuid)
+    * [`obj spec.rolloutPlan.rolloutWebhooks`](#obj-specrolloutplanrolloutwebhooks)
+      * [`fn withExpectedStatus(expectedStatus)`](#fn-specrolloutplanrolloutwebhookswithexpectedstatus)
+      * [`fn withExpectedStatusMixin(expectedStatus)`](#fn-specrolloutplanrolloutwebhookswithexpectedstatusmixin)
+      * [`fn withMetadata(metadata)`](#fn-specrolloutplanrolloutwebhookswithmetadata)
+      * [`fn withMetadataMixin(metadata)`](#fn-specrolloutplanrolloutwebhookswithmetadatamixin)
+      * [`fn withMethod(method)`](#fn-specrolloutplanrolloutwebhookswithmethod)
+      * [`fn withName(name)`](#fn-specrolloutplanrolloutwebhookswithname)
+      * [`fn withType(type)`](#fn-specrolloutplanrolloutwebhookswithtype)
+      * [`fn withUrl(url)`](#fn-specrolloutplanrolloutwebhookswithurl)
 
 ## Fields
 
@@ -161,24 +215,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -365,3 +401,429 @@ withTargetSize(targetSize)
 ```
 
 "The size of the target resource. The default is the same as the size of the source resource."
+
+## obj spec.rolloutPlan.canaryMetric
+
+"CanaryMetric provides a way for the rollout process to automatically check certain metrics before complete the process"
+
+### fn spec.rolloutPlan.canaryMetric.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Interval represents the windows size"
+
+### fn spec.rolloutPlan.canaryMetric.withName
+
+```ts
+withName(name)
+```
+
+"Name of the metric"
+
+## obj spec.rolloutPlan.canaryMetric.metricsRange
+
+"Range value accepted for this metric"
+
+### fn spec.rolloutPlan.canaryMetric.metricsRange.withMax
+
+```ts
+withMax(max)
+```
+
+"Maximum value"
+
+### fn spec.rolloutPlan.canaryMetric.metricsRange.withMin
+
+```ts
+withMin(min)
+```
+
+"Minimum value"
+
+## obj spec.rolloutPlan.canaryMetric.templateRef
+
+"TemplateRef references a metric template object"
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.rolloutPlan.canaryMetric.templateRef.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.rolloutPlan.rolloutBatches
+
+"The exact distribution among batches. its size has to be exactly the same as the NumBatches (if set) The total number cannot exceed the targetSize or the size of the source resource We will IGNORE the last batch's replica field if it's a percentage since round errors can lead to inaccurate sum We highly recommend to leave the last batch's replica field empty"
+
+### fn spec.rolloutPlan.rolloutBatches.withBatchRolloutWebhooks
+
+```ts
+withBatchRolloutWebhooks(batchRolloutWebhooks)
+```
+
+"RolloutWebhooks provides a way for the batch rollout to interact with an external process"
+
+### fn spec.rolloutPlan.rolloutBatches.withBatchRolloutWebhooksMixin
+
+```ts
+withBatchRolloutWebhooksMixin(batchRolloutWebhooks)
+```
+
+"RolloutWebhooks provides a way for the batch rollout to interact with an external process"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutBatches.withCanaryMetric
+
+```ts
+withCanaryMetric(canaryMetric)
+```
+
+"CanaryMetric provides a way for the batch rollout process to automatically check certain metrics before moving to the next batch"
+
+### fn spec.rolloutPlan.rolloutBatches.withCanaryMetricMixin
+
+```ts
+withCanaryMetricMixin(canaryMetric)
+```
+
+"CanaryMetric provides a way for the batch rollout process to automatically check certain metrics before moving to the next batch"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutBatches.withInstanceInterval
+
+```ts
+withInstanceInterval(instanceInterval)
+```
+
+"The wait time, in seconds, between instances upgrades, default = 0"
+
+### fn spec.rolloutPlan.rolloutBatches.withMaxUnavailable
+
+```ts
+withMaxUnavailable(maxUnavailable)
+```
+
+"MaxUnavailable is the max allowed number of pods that is unavailable during the upgrade. We will mark the batch as ready as long as there are less or equal number of pods unavailable than this number. default = 0"
+
+### fn spec.rolloutPlan.rolloutBatches.withPodList
+
+```ts
+withPodList(podList)
+```
+
+"The list of Pods to get upgraded it is mutually exclusive with the Replicas field"
+
+### fn spec.rolloutPlan.rolloutBatches.withPodListMixin
+
+```ts
+withPodListMixin(podList)
+```
+
+"The list of Pods to get upgraded it is mutually exclusive with the Replicas field"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutBatches.withReplicas
+
+```ts
+withReplicas(replicas)
+```
+
+"Replicas is the number of pods to upgrade in this batch it can be an absolute number (ex: 5) or a percentage of total pods we will ignore the percentage of the last batch to just fill the gap it is mutually exclusive with the PodList field"
+
+## obj spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks
+
+"RolloutWebhooks provides a way for the batch rollout to interact with an external process"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withExpectedStatus
+
+```ts
+withExpectedStatus(expectedStatus)
+```
+
+"ExpectedStatus contains all the expected http status code that we will accept as success"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withExpectedStatusMixin
+
+```ts
+withExpectedStatusMixin(expectedStatus)
+```
+
+"ExpectedStatus contains all the expected http status code that we will accept as success"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withMetadata
+
+```ts
+withMetadata(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withMetadataMixin
+
+```ts
+withMetadataMixin(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withMethod
+
+```ts
+withMethod(method)
+```
+
+"Method the HTTP call method, default is POST"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withName
+
+```ts
+withName(name)
+```
+
+"Name of this webhook"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withType
+
+```ts
+withType(type)
+```
+
+"Type of this webhook"
+
+### fn spec.rolloutPlan.rolloutBatches.batchRolloutWebhooks.withUrl
+
+```ts
+withUrl(url)
+```
+
+"URL address of this webhook"
+
+## obj spec.rolloutPlan.rolloutBatches.canaryMetric
+
+"CanaryMetric provides a way for the batch rollout process to automatically check certain metrics before moving to the next batch"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Interval represents the windows size"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.withName
+
+```ts
+withName(name)
+```
+
+"Name of the metric"
+
+## obj spec.rolloutPlan.rolloutBatches.canaryMetric.metricsRange
+
+"Range value accepted for this metric"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.metricsRange.withMax
+
+```ts
+withMax(max)
+```
+
+"Maximum value"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.metricsRange.withMin
+
+```ts
+withMin(min)
+```
+
+"Minimum value"
+
+## obj spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef
+
+"TemplateRef references a metric template object"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.rolloutPlan.rolloutBatches.canaryMetric.templateRef.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.rolloutPlan.rolloutWebhooks
+
+"RolloutWebhooks provide a way for the rollout to interact with an external process"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withExpectedStatus
+
+```ts
+withExpectedStatus(expectedStatus)
+```
+
+"ExpectedStatus contains all the expected http status code that we will accept as success"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withExpectedStatusMixin
+
+```ts
+withExpectedStatusMixin(expectedStatus)
+```
+
+"ExpectedStatus contains all the expected http status code that we will accept as success"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutWebhooks.withMetadata
+
+```ts
+withMetadata(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withMetadataMixin
+
+```ts
+withMetadataMixin(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rolloutPlan.rolloutWebhooks.withMethod
+
+```ts
+withMethod(method)
+```
+
+"Method the HTTP call method, default is POST"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withName
+
+```ts
+withName(name)
+```
+
+"Name of this webhook"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withType
+
+```ts
+withType(type)
+```
+
+"Type of this webhook"
+
+### fn spec.rolloutPlan.rolloutWebhooks.withUrl
+
+```ts
+withUrl(url)
+```
+
+"URL address of this webhook"
