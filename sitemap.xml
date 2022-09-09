@@ -2,157 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha1/envBinding/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha1/policy/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha1/workflow/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/application/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/applicationRevision/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/componentDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/healthScope/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/manualScalerTrait/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/scopeDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/traitDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1alpha2/workloadDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/application/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/applicationRevision/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/componentDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/definitionRevision/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/policyDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/resourceTracker/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/scopeDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/traitDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/workflow/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/workflowStepDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/core/v1beta1/workloadDefinition/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/standard/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/standard/v1alpha1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/kubevela-libsonnet/1.4/standard/v1alpha1/rollout/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2022-09-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
