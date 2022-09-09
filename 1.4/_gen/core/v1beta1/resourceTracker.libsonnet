@@ -47,7 +47,7 @@
     apiVersion: 'core.oam.dev/v1beta1',
     kind: 'ResourceTracker',
   } + self.metadata.withName(name=name) + self.metadata.withAnnotations(annotations={
-    'tanka.dev/namespaced': 'true',
+    'tanka.dev/namespaced': 'false',
   }),
   '#spec':: d.obj(help='"ResourceTrackerSpec define the spec of resourceTracker"'),
   spec: {
