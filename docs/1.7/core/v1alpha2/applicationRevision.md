@@ -138,6 +138,119 @@ permalink: /1.7/core/v1alpha2/applicationRevision/
           * [`fn withName(name)`](#fn-specapplicationspecrolloutplanrolloutwebhookswithname)
           * [`fn withType(type)`](#fn-specapplicationspecrolloutplanrolloutwebhookswithtype)
           * [`fn withUrl(url)`](#fn-specapplicationspecrolloutplanrolloutwebhookswithurl)
+    * [`obj spec.application.status`](#obj-specapplicationstatus)
+      * [`fn withAppliedResources(appliedResources)`](#fn-specapplicationstatuswithappliedresources)
+      * [`fn withAppliedResourcesMixin(appliedResources)`](#fn-specapplicationstatuswithappliedresourcesmixin)
+      * [`fn withComponents(components)`](#fn-specapplicationstatuswithcomponents)
+      * [`fn withComponentsMixin(components)`](#fn-specapplicationstatuswithcomponentsmixin)
+      * [`fn withConditions(conditions)`](#fn-specapplicationstatuswithconditions)
+      * [`fn withConditionsMixin(conditions)`](#fn-specapplicationstatuswithconditionsmixin)
+      * [`fn withObservedGeneration(observedGeneration)`](#fn-specapplicationstatuswithobservedgeneration)
+      * [`fn withPolicy(policy)`](#fn-specapplicationstatuswithpolicy)
+      * [`fn withPolicyMixin(policy)`](#fn-specapplicationstatuswithpolicymixin)
+      * [`fn withServices(services)`](#fn-specapplicationstatuswithservices)
+      * [`fn withServicesMixin(services)`](#fn-specapplicationstatuswithservicesmixin)
+      * [`fn withStatus(status)`](#fn-specapplicationstatuswithstatus)
+      * [`obj spec.application.status.appliedResources`](#obj-specapplicationstatusappliedresources)
+        * [`fn withApiVersion(apiVersion)`](#fn-specapplicationstatusappliedresourceswithapiversion)
+        * [`fn withCluster(cluster)`](#fn-specapplicationstatusappliedresourceswithcluster)
+        * [`fn withCreator(creator)`](#fn-specapplicationstatusappliedresourceswithcreator)
+        * [`fn withFieldPath(fieldPath)`](#fn-specapplicationstatusappliedresourceswithfieldpath)
+        * [`fn withKind(kind)`](#fn-specapplicationstatusappliedresourceswithkind)
+        * [`fn withName(name)`](#fn-specapplicationstatusappliedresourceswithname)
+        * [`fn withNamespace(namespace)`](#fn-specapplicationstatusappliedresourceswithnamespace)
+        * [`fn withResourceVersion(resourceVersion)`](#fn-specapplicationstatusappliedresourceswithresourceversion)
+        * [`fn withUid(uid)`](#fn-specapplicationstatusappliedresourceswithuid)
+      * [`obj spec.application.status.components`](#obj-specapplicationstatuscomponents)
+        * [`fn withApiVersion(apiVersion)`](#fn-specapplicationstatuscomponentswithapiversion)
+        * [`fn withFieldPath(fieldPath)`](#fn-specapplicationstatuscomponentswithfieldpath)
+        * [`fn withKind(kind)`](#fn-specapplicationstatuscomponentswithkind)
+        * [`fn withName(name)`](#fn-specapplicationstatuscomponentswithname)
+        * [`fn withNamespace(namespace)`](#fn-specapplicationstatuscomponentswithnamespace)
+        * [`fn withResourceVersion(resourceVersion)`](#fn-specapplicationstatuscomponentswithresourceversion)
+        * [`fn withUid(uid)`](#fn-specapplicationstatuscomponentswithuid)
+      * [`obj spec.application.status.conditions`](#obj-specapplicationstatusconditions)
+        * [`fn withLastTransitionTime(lastTransitionTime)`](#fn-specapplicationstatusconditionswithlasttransitiontime)
+        * [`fn withMessage(message)`](#fn-specapplicationstatusconditionswithmessage)
+        * [`fn withReason(reason)`](#fn-specapplicationstatusconditionswithreason)
+        * [`fn withStatus(status)`](#fn-specapplicationstatusconditionswithstatus)
+        * [`fn withType(type)`](#fn-specapplicationstatusconditionswithtype)
+      * [`obj spec.application.status.latestRevision`](#obj-specapplicationstatuslatestrevision)
+        * [`fn withName(name)`](#fn-specapplicationstatuslatestrevisionwithname)
+        * [`fn withRevision(revision)`](#fn-specapplicationstatuslatestrevisionwithrevision)
+        * [`fn withRevisionHash(revisionHash)`](#fn-specapplicationstatuslatestrevisionwithrevisionhash)
+      * [`obj spec.application.status.policy`](#obj-specapplicationstatuspolicy)
+        * [`fn withName(name)`](#fn-specapplicationstatuspolicywithname)
+        * [`fn withStatus(status)`](#fn-specapplicationstatuspolicywithstatus)
+        * [`fn withStatusMixin(status)`](#fn-specapplicationstatuspolicywithstatusmixin)
+        * [`fn withType(type)`](#fn-specapplicationstatuspolicywithtype)
+      * [`obj spec.application.status.services`](#obj-specapplicationstatusservices)
+        * [`fn withCluster(cluster)`](#fn-specapplicationstatusserviceswithcluster)
+        * [`fn withEnv(env)`](#fn-specapplicationstatusserviceswithenv)
+        * [`fn withHealthy(healthy)`](#fn-specapplicationstatusserviceswithhealthy)
+        * [`fn withMessage(message)`](#fn-specapplicationstatusserviceswithmessage)
+        * [`fn withName(name)`](#fn-specapplicationstatusserviceswithname)
+        * [`fn withNamespace(namespace)`](#fn-specapplicationstatusserviceswithnamespace)
+        * [`fn withScopes(scopes)`](#fn-specapplicationstatusserviceswithscopes)
+        * [`fn withScopesMixin(scopes)`](#fn-specapplicationstatusserviceswithscopesmixin)
+        * [`fn withTraits(traits)`](#fn-specapplicationstatusserviceswithtraits)
+        * [`fn withTraitsMixin(traits)`](#fn-specapplicationstatusserviceswithtraitsmixin)
+        * [`obj spec.application.status.services.scopes`](#obj-specapplicationstatusservicesscopes)
+          * [`fn withApiVersion(apiVersion)`](#fn-specapplicationstatusservicesscopeswithapiversion)
+          * [`fn withFieldPath(fieldPath)`](#fn-specapplicationstatusservicesscopeswithfieldpath)
+          * [`fn withKind(kind)`](#fn-specapplicationstatusservicesscopeswithkind)
+          * [`fn withName(name)`](#fn-specapplicationstatusservicesscopeswithname)
+          * [`fn withNamespace(namespace)`](#fn-specapplicationstatusservicesscopeswithnamespace)
+          * [`fn withResourceVersion(resourceVersion)`](#fn-specapplicationstatusservicesscopeswithresourceversion)
+          * [`fn withUid(uid)`](#fn-specapplicationstatusservicesscopeswithuid)
+        * [`obj spec.application.status.services.traits`](#obj-specapplicationstatusservicestraits)
+          * [`fn withHealthy(healthy)`](#fn-specapplicationstatusservicestraitswithhealthy)
+          * [`fn withMessage(message)`](#fn-specapplicationstatusservicestraitswithmessage)
+          * [`fn withType(type)`](#fn-specapplicationstatusservicestraitswithtype)
+        * [`obj spec.application.status.services.workloadDefinition`](#obj-specapplicationstatusservicesworkloaddefinition)
+          * [`fn withApiVersion(apiVersion)`](#fn-specapplicationstatusservicesworkloaddefinitionwithapiversion)
+          * [`fn withKind(kind)`](#fn-specapplicationstatusservicesworkloaddefinitionwithkind)
+      * [`obj spec.application.status.workflow`](#obj-specapplicationstatusworkflow)
+        * [`fn withAppRevision(appRevision)`](#fn-specapplicationstatusworkflowwithapprevision)
+        * [`fn withEndTime(endTime)`](#fn-specapplicationstatusworkflowwithendtime)
+        * [`fn withFinished(finished)`](#fn-specapplicationstatusworkflowwithfinished)
+        * [`fn withMessage(message)`](#fn-specapplicationstatusworkflowwithmessage)
+        * [`fn withMode(mode)`](#fn-specapplicationstatusworkflowwithmode)
+        * [`fn withStartTime(startTime)`](#fn-specapplicationstatusworkflowwithstarttime)
+        * [`fn withStatus(status)`](#fn-specapplicationstatusworkflowwithstatus)
+        * [`fn withSteps(steps)`](#fn-specapplicationstatusworkflowwithsteps)
+        * [`fn withStepsMixin(steps)`](#fn-specapplicationstatusworkflowwithstepsmixin)
+        * [`fn withSuspend(suspend)`](#fn-specapplicationstatusworkflowwithsuspend)
+        * [`fn withSuspendState(suspendState)`](#fn-specapplicationstatusworkflowwithsuspendstate)
+        * [`fn withTerminated(terminated)`](#fn-specapplicationstatusworkflowwithterminated)
+        * [`obj spec.application.status.workflow.contextBackend`](#obj-specapplicationstatusworkflowcontextbackend)
+          * [`fn withApiVersion(apiVersion)`](#fn-specapplicationstatusworkflowcontextbackendwithapiversion)
+          * [`fn withFieldPath(fieldPath)`](#fn-specapplicationstatusworkflowcontextbackendwithfieldpath)
+          * [`fn withKind(kind)`](#fn-specapplicationstatusworkflowcontextbackendwithkind)
+          * [`fn withName(name)`](#fn-specapplicationstatusworkflowcontextbackendwithname)
+          * [`fn withNamespace(namespace)`](#fn-specapplicationstatusworkflowcontextbackendwithnamespace)
+          * [`fn withResourceVersion(resourceVersion)`](#fn-specapplicationstatusworkflowcontextbackendwithresourceversion)
+          * [`fn withUid(uid)`](#fn-specapplicationstatusworkflowcontextbackendwithuid)
+        * [`obj spec.application.status.workflow.steps`](#obj-specapplicationstatusworkflowsteps)
+          * [`fn withFirstExecuteTime(firstExecuteTime)`](#fn-specapplicationstatusworkflowstepswithfirstexecutetime)
+          * [`fn withId(id)`](#fn-specapplicationstatusworkflowstepswithid)
+          * [`fn withLastExecuteTime(lastExecuteTime)`](#fn-specapplicationstatusworkflowstepswithlastexecutetime)
+          * [`fn withMessage(message)`](#fn-specapplicationstatusworkflowstepswithmessage)
+          * [`fn withName(name)`](#fn-specapplicationstatusworkflowstepswithname)
+          * [`fn withPhase(phase)`](#fn-specapplicationstatusworkflowstepswithphase)
+          * [`fn withReason(reason)`](#fn-specapplicationstatusworkflowstepswithreason)
+          * [`fn withSubSteps(subSteps)`](#fn-specapplicationstatusworkflowstepswithsubsteps)
+          * [`fn withSubStepsMixin(subSteps)`](#fn-specapplicationstatusworkflowstepswithsubstepsmixin)
+          * [`fn withType(type)`](#fn-specapplicationstatusworkflowstepswithtype)
+          * [`obj spec.application.status.workflow.steps.subSteps`](#obj-specapplicationstatusworkflowstepssubsteps)
+            * [`fn withFirstExecuteTime(firstExecuteTime)`](#fn-specapplicationstatusworkflowstepssubstepswithfirstexecutetime)
+            * [`fn withId(id)`](#fn-specapplicationstatusworkflowstepssubstepswithid)
+            * [`fn withLastExecuteTime(lastExecuteTime)`](#fn-specapplicationstatusworkflowstepssubstepswithlastexecutetime)
+            * [`fn withMessage(message)`](#fn-specapplicationstatusworkflowstepssubstepswithmessage)
+            * [`fn withName(name)`](#fn-specapplicationstatusworkflowstepssubstepswithname)
+            * [`fn withPhase(phase)`](#fn-specapplicationstatusworkflowstepssubstepswithphase)
+            * [`fn withReason(reason)`](#fn-specapplicationstatusworkflowstepssubstepswithreason)
+            * [`fn withType(type)`](#fn-specapplicationstatusworkflowstepssubstepswithtype)
   * [`obj spec.components`](#obj-speccomponents)
     * [`fn withRaw(raw)`](#fn-speccomponentswithraw)
     * [`fn withRawMixin(raw)`](#fn-speccomponentswithrawmixin)
@@ -1171,6 +1284,874 @@ withUrl(url)
 ```
 
 "URL address of this webhook"
+
+## obj spec.application.status
+
+"AppStatus defines the observed state of Application"
+
+### fn spec.application.status.withAppliedResources
+
+```ts
+withAppliedResources(appliedResources)
+```
+
+"AppliedResources record the resources that the  workflow step apply."
+
+### fn spec.application.status.withAppliedResourcesMixin
+
+```ts
+withAppliedResourcesMixin(appliedResources)
+```
+
+"AppliedResources record the resources that the  workflow step apply."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.withComponents
+
+```ts
+withComponents(components)
+```
+
+"Components record the related Components created by Application Controller"
+
+### fn spec.application.status.withComponentsMixin
+
+```ts
+withComponentsMixin(components)
+```
+
+"Components record the related Components created by Application Controller"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.withConditions
+
+```ts
+withConditions(conditions)
+```
+
+"Conditions of the resource."
+
+### fn spec.application.status.withConditionsMixin
+
+```ts
+withConditionsMixin(conditions)
+```
+
+"Conditions of the resource."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.withObservedGeneration
+
+```ts
+withObservedGeneration(observedGeneration)
+```
+
+"The generation observed by the application controller."
+
+### fn spec.application.status.withPolicy
+
+```ts
+withPolicy(policy)
+```
+
+"PolicyStatus records the status of policy Deprecated This field is only used by EnvBinding Policy which is deprecated."
+
+### fn spec.application.status.withPolicyMixin
+
+```ts
+withPolicyMixin(policy)
+```
+
+"PolicyStatus records the status of policy Deprecated This field is only used by EnvBinding Policy which is deprecated."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.withServices
+
+```ts
+withServices(services)
+```
+
+"Services record the status of the application services"
+
+### fn spec.application.status.withServicesMixin
+
+```ts
+withServicesMixin(services)
+```
+
+"Services record the status of the application services"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.withStatus
+
+```ts
+withStatus(status)
+```
+
+"ApplicationPhase is a label for the condition of an application at the current time"
+
+## obj spec.application.status.appliedResources
+
+"AppliedResources record the resources that the  workflow step apply."
+
+### fn spec.application.status.appliedResources.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.application.status.appliedResources.withCluster
+
+```ts
+withCluster(cluster)
+```
+
+
+
+### fn spec.application.status.appliedResources.withCreator
+
+```ts
+withCreator(creator)
+```
+
+
+
+### fn spec.application.status.appliedResources.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.application.status.appliedResources.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.application.status.appliedResources.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.application.status.appliedResources.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.application.status.appliedResources.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.application.status.appliedResources.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.application.status.components
+
+"Components record the related Components created by Application Controller"
+
+### fn spec.application.status.components.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.application.status.components.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.application.status.components.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.application.status.components.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.application.status.components.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.application.status.components.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.application.status.components.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.application.status.conditions
+
+"Conditions of the resource."
+
+### fn spec.application.status.conditions.withLastTransitionTime
+
+```ts
+withLastTransitionTime(lastTransitionTime)
+```
+
+"LastTransitionTime is the last time this condition transitioned from one status to another."
+
+### fn spec.application.status.conditions.withMessage
+
+```ts
+withMessage(message)
+```
+
+"A Message containing details about this condition's last transition from one status to another, if any."
+
+### fn spec.application.status.conditions.withReason
+
+```ts
+withReason(reason)
+```
+
+"A Reason for this condition's last transition from one status to another."
+
+### fn spec.application.status.conditions.withStatus
+
+```ts
+withStatus(status)
+```
+
+"Status of this condition; is it currently True, False, or Unknown?"
+
+### fn spec.application.status.conditions.withType
+
+```ts
+withType(type)
+```
+
+"Type of this condition. At most one of each condition type may apply to a resource at any point in time."
+
+## obj spec.application.status.latestRevision
+
+"LatestRevision of the application configuration it generates"
+
+### fn spec.application.status.latestRevision.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.application.status.latestRevision.withRevision
+
+```ts
+withRevision(revision)
+```
+
+
+
+### fn spec.application.status.latestRevision.withRevisionHash
+
+```ts
+withRevisionHash(revisionHash)
+```
+
+"RevisionHash record the hash value of the spec of ApplicationRevision object."
+
+## obj spec.application.status.policy
+
+"PolicyStatus records the status of policy Deprecated This field is only used by EnvBinding Policy which is deprecated."
+
+### fn spec.application.status.policy.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.application.status.policy.withStatus
+
+```ts
+withStatus(status)
+```
+
+
+
+### fn spec.application.status.policy.withStatusMixin
+
+```ts
+withStatusMixin(status)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.policy.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.application.status.services
+
+"Services record the status of the application services"
+
+### fn spec.application.status.services.withCluster
+
+```ts
+withCluster(cluster)
+```
+
+
+
+### fn spec.application.status.services.withEnv
+
+```ts
+withEnv(env)
+```
+
+
+
+### fn spec.application.status.services.withHealthy
+
+```ts
+withHealthy(healthy)
+```
+
+
+
+### fn spec.application.status.services.withMessage
+
+```ts
+withMessage(message)
+```
+
+
+
+### fn spec.application.status.services.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.application.status.services.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+
+
+### fn spec.application.status.services.withScopes
+
+```ts
+withScopes(scopes)
+```
+
+
+
+### fn spec.application.status.services.withScopesMixin
+
+```ts
+withScopesMixin(scopes)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.services.withTraits
+
+```ts
+withTraits(traits)
+```
+
+
+
+### fn spec.application.status.services.withTraitsMixin
+
+```ts
+withTraitsMixin(traits)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.application.status.services.scopes
+
+
+
+### fn spec.application.status.services.scopes.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.application.status.services.scopes.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.application.status.services.scopes.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.application.status.services.scopes.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.application.status.services.scopes.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.application.status.services.scopes.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.application.status.services.scopes.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.application.status.services.traits
+
+
+
+### fn spec.application.status.services.traits.withHealthy
+
+```ts
+withHealthy(healthy)
+```
+
+
+
+### fn spec.application.status.services.traits.withMessage
+
+```ts
+withMessage(message)
+```
+
+
+
+### fn spec.application.status.services.traits.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.application.status.services.workloadDefinition
+
+"WorkloadDefinition is the definition of a WorkloadDefinition, such as deployments/apps.v1"
+
+### fn spec.application.status.services.workloadDefinition.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+
+
+### fn spec.application.status.services.workloadDefinition.withKind
+
+```ts
+withKind(kind)
+```
+
+
+
+## obj spec.application.status.workflow
+
+"Workflow record the status of workflow"
+
+### fn spec.application.status.workflow.withAppRevision
+
+```ts
+withAppRevision(appRevision)
+```
+
+
+
+### fn spec.application.status.workflow.withEndTime
+
+```ts
+withEndTime(endTime)
+```
+
+
+
+### fn spec.application.status.workflow.withFinished
+
+```ts
+withFinished(finished)
+```
+
+
+
+### fn spec.application.status.workflow.withMessage
+
+```ts
+withMessage(message)
+```
+
+
+
+### fn spec.application.status.workflow.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.application.status.workflow.withStartTime
+
+```ts
+withStartTime(startTime)
+```
+
+
+
+### fn spec.application.status.workflow.withStatus
+
+```ts
+withStatus(status)
+```
+
+"WorkflowRunPhase is a label for the condition of a WorkflowRun at the current time"
+
+### fn spec.application.status.workflow.withSteps
+
+```ts
+withSteps(steps)
+```
+
+
+
+### fn spec.application.status.workflow.withStepsMixin
+
+```ts
+withStepsMixin(steps)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.workflow.withSuspend
+
+```ts
+withSuspend(suspend)
+```
+
+
+
+### fn spec.application.status.workflow.withSuspendState
+
+```ts
+withSuspendState(suspendState)
+```
+
+
+
+### fn spec.application.status.workflow.withTerminated
+
+```ts
+withTerminated(terminated)
+```
+
+
+
+## obj spec.application.status.workflow.contextBackend
+
+"ObjectReference contains enough information to let you inspect or modify the referred object. --- New uses of this type are discouraged because of difficulty describing its usage when embedded in APIs. 1. Ignored fields.  It includes many fields which are not generally honored.  For instance, ResourceVersion and FieldPath are both very rarely valid in actual usage. 2. Invalid usage help.  It is impossible to add specific help for individual usage.  In most embedded usages, there are particular restrictions like, \"must refer only to types A and B\" or \"UID not honored\" or \"name must be restricted\". Those cannot be well described when embedded. 3. Inconsistent validation.  Because the usages are different, the validation rules are different by usage, which makes it hard for users to predict what will happen. 4. The fields are both imprecise and overly precise.  Kind is not a precise mapping to a URL. This can produce ambiguity during interpretation and require a REST mapping.  In most cases, the dependency is on the group,resource tuple and the version of the actual struct is irrelevant. 5. We cannot easily change it.  Because this type is embedded in many locations, updates to this type will affect numerous schemas.  Don't make new APIs embed an underspecified API type they do not control. \n Instead of using this type, create a locally provided and used type that is well-focused on your reference. For example, ServiceReferences for admission registration: https://github.com/kubernetes/api/blob/release-1.17/admissionregistration/v1/types.go#L533 ."
+
+### fn spec.application.status.workflow.contextBackend.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent."
+
+### fn spec.application.status.workflow.contextBackend.withFieldPath
+
+```ts
+withFieldPath(fieldPath)
+```
+
+"If referring to a piece of an object instead of an entire object, this string should contain a valid JSON/Go field access statement, such as desiredState.manifest.containers[2]. For example, if the object reference is to a container within a pod, this would take on a value like: \"spec.containers{name}\" (where \"name\" refers to the name of the container that triggered the event) or if no container name is specified \"spec.containers[2]\" (container with index 2 in this pod). This syntax is chosen only to have some well-defined way of referencing a part of an object. TODO: this design is not final and this field is subject to change in the future."
+
+### fn spec.application.status.workflow.contextBackend.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+### fn spec.application.status.workflow.contextBackend.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+
+### fn spec.application.status.workflow.contextBackend.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/"
+
+### fn spec.application.status.workflow.contextBackend.withResourceVersion
+
+```ts
+withResourceVersion(resourceVersion)
+```
+
+"Specific resourceVersion to which this reference is made, if any. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
+
+### fn spec.application.status.workflow.contextBackend.withUid
+
+```ts
+withUid(uid)
+```
+
+"UID of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids"
+
+## obj spec.application.status.workflow.steps
+
+
+
+### fn spec.application.status.workflow.steps.withFirstExecuteTime
+
+```ts
+withFirstExecuteTime(firstExecuteTime)
+```
+
+"FirstExecuteTime is the first time this step execution."
+
+### fn spec.application.status.workflow.steps.withId
+
+```ts
+withId(id)
+```
+
+
+
+### fn spec.application.status.workflow.steps.withLastExecuteTime
+
+```ts
+withLastExecuteTime(lastExecuteTime)
+```
+
+"LastExecuteTime is the last time this step execution."
+
+### fn spec.application.status.workflow.steps.withMessage
+
+```ts
+withMessage(message)
+```
+
+"A human readable message indicating details about why the workflowStep is in this state."
+
+### fn spec.application.status.workflow.steps.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.application.status.workflow.steps.withPhase
+
+```ts
+withPhase(phase)
+```
+
+"WorkflowStepPhase describes the phase of a workflow step."
+
+### fn spec.application.status.workflow.steps.withReason
+
+```ts
+withReason(reason)
+```
+
+"A brief CamelCase message indicating details about why the workflowStep is in this state."
+
+### fn spec.application.status.workflow.steps.withSubSteps
+
+```ts
+withSubSteps(subSteps)
+```
+
+
+
+### fn spec.application.status.workflow.steps.withSubStepsMixin
+
+```ts
+withSubStepsMixin(subSteps)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.application.status.workflow.steps.withType
+
+```ts
+withType(type)
+```
+
+
+
+## obj spec.application.status.workflow.steps.subSteps
+
+
+
+### fn spec.application.status.workflow.steps.subSteps.withFirstExecuteTime
+
+```ts
+withFirstExecuteTime(firstExecuteTime)
+```
+
+"FirstExecuteTime is the first time this step execution."
+
+### fn spec.application.status.workflow.steps.subSteps.withId
+
+```ts
+withId(id)
+```
+
+
+
+### fn spec.application.status.workflow.steps.subSteps.withLastExecuteTime
+
+```ts
+withLastExecuteTime(lastExecuteTime)
+```
+
+"LastExecuteTime is the last time this step execution."
+
+### fn spec.application.status.workflow.steps.subSteps.withMessage
+
+```ts
+withMessage(message)
+```
+
+"A human readable message indicating details about why the workflowStep is in this state."
+
+### fn spec.application.status.workflow.steps.subSteps.withName
+
+```ts
+withName(name)
+```
+
+
+
+### fn spec.application.status.workflow.steps.subSteps.withPhase
+
+```ts
+withPhase(phase)
+```
+
+"WorkflowStepPhase describes the phase of a workflow step."
+
+### fn spec.application.status.workflow.steps.subSteps.withReason
+
+```ts
+withReason(reason)
+```
+
+"A brief CamelCase message indicating details about why the workflowStep is in this state."
+
+### fn spec.application.status.workflow.steps.subSteps.withType
+
+```ts
+withType(type)
+```
+
+
 
 ## obj spec.components
 

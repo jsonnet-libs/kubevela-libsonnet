@@ -139,6 +139,13 @@
         },
       },
     },
+    '#status':: d.obj(help='"Status defines the custom health policy and status message for workload"'),
+    status: {
+      '#withCustomStatus':: d.fn(help='"CustomStatus defines the custom status message that could display to user"', args=[d.arg(name='customStatus', type=d.T.string)]),
+      withCustomStatus(customStatus): { spec+: { status+: { customStatus: customStatus } } },
+      '#withHealthPolicy':: d.fn(help='"HealthPolicy defines the health check policy for the abstraction"', args=[d.arg(name='healthPolicy', type=d.T.string)]),
+      withHealthPolicy(healthPolicy): { spec+: { status+: { healthPolicy: healthPolicy } } },
+    },
     '#withChildResourceKinds':: d.fn(help='"ChildResourceKinds are the list of GVK of the child resources this workload generates"', args=[d.arg(name='childResourceKinds', type=d.T.array)]),
     withChildResourceKinds(childResourceKinds): { spec+: { childResourceKinds: if std.isArray(v=childResourceKinds) then childResourceKinds else [childResourceKinds] } },
     '#withChildResourceKindsMixin':: d.fn(help='"ChildResourceKinds are the list of GVK of the child resources this workload generates"\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='childResourceKinds', type=d.T.array)]),

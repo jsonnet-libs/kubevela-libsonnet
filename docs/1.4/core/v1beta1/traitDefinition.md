@@ -77,6 +77,9 @@ permalink: /1.4/core/v1beta1/traitDefinition/
       * [`obj spec.schematic.terraform.writeConnectionSecretToRef`](#obj-specschematicterraformwriteconnectionsecrettoref)
         * [`fn withName(name)`](#fn-specschematicterraformwriteconnectionsecrettorefwithname)
         * [`fn withNamespace(namespace)`](#fn-specschematicterraformwriteconnectionsecrettorefwithnamespace)
+  * [`obj spec.status`](#obj-specstatus)
+    * [`fn withCustomStatus(customStatus)`](#fn-specstatuswithcustomstatus)
+    * [`fn withHealthPolicy(healthPolicy)`](#fn-specstatuswithhealthpolicy)
 
 ## Fields
 
@@ -611,3 +614,23 @@ withNamespace(namespace)
 ```
 
 "Namespace of the secret."
+
+## obj spec.status
+
+"Status defines the custom health policy and status message for trait"
+
+### fn spec.status.withCustomStatus
+
+```ts
+withCustomStatus(customStatus)
+```
+
+"CustomStatus defines the custom status message that could display to user"
+
+### fn spec.status.withHealthPolicy
+
+```ts
+withHealthPolicy(healthPolicy)
+```
+
+"HealthPolicy defines the health check policy for the abstraction"

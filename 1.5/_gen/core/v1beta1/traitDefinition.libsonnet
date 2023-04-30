@@ -128,6 +128,13 @@
         },
       },
     },
+    '#status':: d.obj(help='"Status defines the custom health policy and status message for trait"'),
+    status: {
+      '#withCustomStatus':: d.fn(help='"CustomStatus defines the custom status message that could display to user"', args=[d.arg(name='customStatus', type=d.T.string)]),
+      withCustomStatus(customStatus): { spec+: { status+: { customStatus: customStatus } } },
+      '#withHealthPolicy':: d.fn(help='"HealthPolicy defines the health check policy for the abstraction"', args=[d.arg(name='healthPolicy', type=d.T.string)]),
+      withHealthPolicy(healthPolicy): { spec+: { status+: { healthPolicy: healthPolicy } } },
+    },
     '#withAppliesToWorkloads':: d.fn(help='"AppliesToWorkloads specifies the list of workload kinds this trait applies to. Workload kinds are specified in resource.group/version format, e.g. server.core.oam.dev/v1alpha2. Traits that omit this field apply to all workload kinds."', args=[d.arg(name='appliesToWorkloads', type=d.T.array)]),
     withAppliesToWorkloads(appliesToWorkloads): { spec+: { appliesToWorkloads: if std.isArray(v=appliesToWorkloads) then appliesToWorkloads else [appliesToWorkloads] } },
     '#withAppliesToWorkloadsMixin':: d.fn(help='"AppliesToWorkloads specifies the list of workload kinds this trait applies to. Workload kinds are specified in resource.group/version format, e.g. server.core.oam.dev/v1alpha2. Traits that omit this field apply to all workload kinds."\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='appliesToWorkloads', type=d.T.array)]),
