@@ -89,28 +89,11 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`obj spec.componentDefinition.spec.schematic.terraform.writeConnectionSecretToRef`](#obj-speccomponentdefinitionspecschematicterraformwriteconnectionsecrettoref)
             * [`fn withName(name)`](#fn-speccomponentdefinitionspecschematicterraformwriteconnectionsecrettorefwithname)
             * [`fn withNamespace(namespace)`](#fn-speccomponentdefinitionspecschematicterraformwriteconnectionsecrettorefwithnamespace)
-      * [`obj spec.componentDefinition.spec.status`](#obj-speccomponentdefinitionspecstatus)
-        * [`fn withCustomStatus(customStatus)`](#fn-speccomponentdefinitionspecstatuswithcustomstatus)
-        * [`fn withHealthPolicy(healthPolicy)`](#fn-speccomponentdefinitionspecstatuswithhealthpolicy)
       * [`obj spec.componentDefinition.spec.workload`](#obj-speccomponentdefinitionspecworkload)
         * [`fn withType(type)`](#fn-speccomponentdefinitionspecworkloadwithtype)
         * [`obj spec.componentDefinition.spec.workload.definition`](#obj-speccomponentdefinitionspecworkloaddefinition)
           * [`fn withApiVersion(apiVersion)`](#fn-speccomponentdefinitionspecworkloaddefinitionwithapiversion)
           * [`fn withKind(kind)`](#fn-speccomponentdefinitionspecworkloaddefinitionwithkind)
-    * [`obj spec.componentDefinition.status`](#obj-speccomponentdefinitionstatus)
-      * [`fn withConditions(conditions)`](#fn-speccomponentdefinitionstatuswithconditions)
-      * [`fn withConditionsMixin(conditions)`](#fn-speccomponentdefinitionstatuswithconditionsmixin)
-      * [`fn withConfigMapRef(configMapRef)`](#fn-speccomponentdefinitionstatuswithconfigmapref)
-      * [`obj spec.componentDefinition.status.conditions`](#obj-speccomponentdefinitionstatusconditions)
-        * [`fn withLastTransitionTime(lastTransitionTime)`](#fn-speccomponentdefinitionstatusconditionswithlasttransitiontime)
-        * [`fn withMessage(message)`](#fn-speccomponentdefinitionstatusconditionswithmessage)
-        * [`fn withReason(reason)`](#fn-speccomponentdefinitionstatusconditionswithreason)
-        * [`fn withStatus(status)`](#fn-speccomponentdefinitionstatusconditionswithstatus)
-        * [`fn withType(type)`](#fn-speccomponentdefinitionstatusconditionswithtype)
-      * [`obj spec.componentDefinition.status.latestRevision`](#obj-speccomponentdefinitionstatuslatestrevision)
-        * [`fn withName(name)`](#fn-speccomponentdefinitionstatuslatestrevisionwithname)
-        * [`fn withRevision(revision)`](#fn-speccomponentdefinitionstatuslatestrevisionwithrevision)
-        * [`fn withRevisionHash(revisionHash)`](#fn-speccomponentdefinitionstatuslatestrevisionwithrevisionhash)
   * [`obj spec.policyDefinition`](#obj-specpolicydefinition)
     * [`fn withApiVersion(apiVersion)`](#fn-specpolicydefinitionwithapiversion)
     * [`fn withKind(kind)`](#fn-specpolicydefinitionwithkind)
@@ -160,20 +143,6 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`obj spec.policyDefinition.spec.schematic.terraform.writeConnectionSecretToRef`](#obj-specpolicydefinitionspecschematicterraformwriteconnectionsecrettoref)
             * [`fn withName(name)`](#fn-specpolicydefinitionspecschematicterraformwriteconnectionsecrettorefwithname)
             * [`fn withNamespace(namespace)`](#fn-specpolicydefinitionspecschematicterraformwriteconnectionsecrettorefwithnamespace)
-    * [`obj spec.policyDefinition.status`](#obj-specpolicydefinitionstatus)
-      * [`fn withConditions(conditions)`](#fn-specpolicydefinitionstatuswithconditions)
-      * [`fn withConditionsMixin(conditions)`](#fn-specpolicydefinitionstatuswithconditionsmixin)
-      * [`fn withConfigMapRef(configMapRef)`](#fn-specpolicydefinitionstatuswithconfigmapref)
-      * [`obj spec.policyDefinition.status.conditions`](#obj-specpolicydefinitionstatusconditions)
-        * [`fn withLastTransitionTime(lastTransitionTime)`](#fn-specpolicydefinitionstatusconditionswithlasttransitiontime)
-        * [`fn withMessage(message)`](#fn-specpolicydefinitionstatusconditionswithmessage)
-        * [`fn withReason(reason)`](#fn-specpolicydefinitionstatusconditionswithreason)
-        * [`fn withStatus(status)`](#fn-specpolicydefinitionstatusconditionswithstatus)
-        * [`fn withType(type)`](#fn-specpolicydefinitionstatusconditionswithtype)
-      * [`obj spec.policyDefinition.status.latestRevision`](#obj-specpolicydefinitionstatuslatestrevision)
-        * [`fn withName(name)`](#fn-specpolicydefinitionstatuslatestrevisionwithname)
-        * [`fn withRevision(revision)`](#fn-specpolicydefinitionstatuslatestrevisionwithrevision)
-        * [`fn withRevisionHash(revisionHash)`](#fn-specpolicydefinitionstatuslatestrevisionwithrevisionhash)
   * [`obj spec.traitDefinition`](#obj-spectraitdefinition)
     * [`fn withApiVersion(apiVersion)`](#fn-spectraitdefinitionwithapiversion)
     * [`fn withKind(kind)`](#fn-spectraitdefinitionwithkind)
@@ -234,23 +203,6 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`obj spec.traitDefinition.spec.schematic.terraform.writeConnectionSecretToRef`](#obj-spectraitdefinitionspecschematicterraformwriteconnectionsecrettoref)
             * [`fn withName(name)`](#fn-spectraitdefinitionspecschematicterraformwriteconnectionsecrettorefwithname)
             * [`fn withNamespace(namespace)`](#fn-spectraitdefinitionspecschematicterraformwriteconnectionsecrettorefwithnamespace)
-      * [`obj spec.traitDefinition.spec.status`](#obj-spectraitdefinitionspecstatus)
-        * [`fn withCustomStatus(customStatus)`](#fn-spectraitdefinitionspecstatuswithcustomstatus)
-        * [`fn withHealthPolicy(healthPolicy)`](#fn-spectraitdefinitionspecstatuswithhealthpolicy)
-    * [`obj spec.traitDefinition.status`](#obj-spectraitdefinitionstatus)
-      * [`fn withConditions(conditions)`](#fn-spectraitdefinitionstatuswithconditions)
-      * [`fn withConditionsMixin(conditions)`](#fn-spectraitdefinitionstatuswithconditionsmixin)
-      * [`fn withConfigMapRef(configMapRef)`](#fn-spectraitdefinitionstatuswithconfigmapref)
-      * [`obj spec.traitDefinition.status.conditions`](#obj-spectraitdefinitionstatusconditions)
-        * [`fn withLastTransitionTime(lastTransitionTime)`](#fn-spectraitdefinitionstatusconditionswithlasttransitiontime)
-        * [`fn withMessage(message)`](#fn-spectraitdefinitionstatusconditionswithmessage)
-        * [`fn withReason(reason)`](#fn-spectraitdefinitionstatusconditionswithreason)
-        * [`fn withStatus(status)`](#fn-spectraitdefinitionstatusconditionswithstatus)
-        * [`fn withType(type)`](#fn-spectraitdefinitionstatusconditionswithtype)
-      * [`obj spec.traitDefinition.status.latestRevision`](#obj-spectraitdefinitionstatuslatestrevision)
-        * [`fn withName(name)`](#fn-spectraitdefinitionstatuslatestrevisionwithname)
-        * [`fn withRevision(revision)`](#fn-spectraitdefinitionstatuslatestrevisionwithrevision)
-        * [`fn withRevisionHash(revisionHash)`](#fn-spectraitdefinitionstatuslatestrevisionwithrevisionhash)
   * [`obj spec.workflowStepDefinition`](#obj-specworkflowstepdefinition)
     * [`fn withApiVersion(apiVersion)`](#fn-specworkflowstepdefinitionwithapiversion)
     * [`fn withKind(kind)`](#fn-specworkflowstepdefinitionwithkind)
@@ -299,20 +251,6 @@ permalink: /1.4/core/v1beta1/definitionRevision/
           * [`obj spec.workflowStepDefinition.spec.schematic.terraform.writeConnectionSecretToRef`](#obj-specworkflowstepdefinitionspecschematicterraformwriteconnectionsecrettoref)
             * [`fn withName(name)`](#fn-specworkflowstepdefinitionspecschematicterraformwriteconnectionsecrettorefwithname)
             * [`fn withNamespace(namespace)`](#fn-specworkflowstepdefinitionspecschematicterraformwriteconnectionsecrettorefwithnamespace)
-    * [`obj spec.workflowStepDefinition.status`](#obj-specworkflowstepdefinitionstatus)
-      * [`fn withConditions(conditions)`](#fn-specworkflowstepdefinitionstatuswithconditions)
-      * [`fn withConditionsMixin(conditions)`](#fn-specworkflowstepdefinitionstatuswithconditionsmixin)
-      * [`fn withConfigMapRef(configMapRef)`](#fn-specworkflowstepdefinitionstatuswithconfigmapref)
-      * [`obj spec.workflowStepDefinition.status.conditions`](#obj-specworkflowstepdefinitionstatusconditions)
-        * [`fn withLastTransitionTime(lastTransitionTime)`](#fn-specworkflowstepdefinitionstatusconditionswithlasttransitiontime)
-        * [`fn withMessage(message)`](#fn-specworkflowstepdefinitionstatusconditionswithmessage)
-        * [`fn withReason(reason)`](#fn-specworkflowstepdefinitionstatusconditionswithreason)
-        * [`fn withStatus(status)`](#fn-specworkflowstepdefinitionstatusconditionswithstatus)
-        * [`fn withType(type)`](#fn-specworkflowstepdefinitionstatusconditionswithtype)
-      * [`obj spec.workflowStepDefinition.status.latestRevision`](#obj-specworkflowstepdefinitionstatuslatestrevision)
-        * [`fn withName(name)`](#fn-specworkflowstepdefinitionstatuslatestrevisionwithname)
-        * [`fn withRevision(revision)`](#fn-specworkflowstepdefinitionstatuslatestrevisionwithrevision)
-        * [`fn withRevisionHash(revisionHash)`](#fn-specworkflowstepdefinitionstatuslatestrevisionwithrevisionhash)
 
 ## Fields
 
@@ -938,26 +876,6 @@ withNamespace(namespace)
 
 "Namespace of the secret."
 
-## obj spec.componentDefinition.spec.status
-
-"Status defines the custom health policy and status message for workload"
-
-### fn spec.componentDefinition.spec.status.withCustomStatus
-
-```ts
-withCustomStatus(customStatus)
-```
-
-"CustomStatus defines the custom status message that could display to user"
-
-### fn spec.componentDefinition.spec.status.withHealthPolicy
-
-```ts
-withHealthPolicy(healthPolicy)
-```
-
-"HealthPolicy defines the health check policy for the abstraction"
-
 ## obj spec.componentDefinition.spec.workload
 
 "Workload is a workload type descriptor"
@@ -989,108 +907,6 @@ withKind(kind)
 ```
 
 
-
-## obj spec.componentDefinition.status
-
-"ComponentDefinitionStatus is the status of ComponentDefinition"
-
-### fn spec.componentDefinition.status.withConditions
-
-```ts
-withConditions(conditions)
-```
-
-"Conditions of the resource."
-
-### fn spec.componentDefinition.status.withConditionsMixin
-
-```ts
-withConditionsMixin(conditions)
-```
-
-"Conditions of the resource."
-
-**Note:** This function appends passed data to existing values
-
-### fn spec.componentDefinition.status.withConfigMapRef
-
-```ts
-withConfigMapRef(configMapRef)
-```
-
-"ConfigMapRef refer to a ConfigMap which contains OpenAPI V3 JSON schema of Component parameters."
-
-## obj spec.componentDefinition.status.conditions
-
-"Conditions of the resource."
-
-### fn spec.componentDefinition.status.conditions.withLastTransitionTime
-
-```ts
-withLastTransitionTime(lastTransitionTime)
-```
-
-"LastTransitionTime is the last time this condition transitioned from one status to another."
-
-### fn spec.componentDefinition.status.conditions.withMessage
-
-```ts
-withMessage(message)
-```
-
-"A Message containing details about this condition's last transition from one status to another, if any."
-
-### fn spec.componentDefinition.status.conditions.withReason
-
-```ts
-withReason(reason)
-```
-
-"A Reason for this condition's last transition from one status to another."
-
-### fn spec.componentDefinition.status.conditions.withStatus
-
-```ts
-withStatus(status)
-```
-
-"Status of this condition; is it currently True, False, or Unknown?"
-
-### fn spec.componentDefinition.status.conditions.withType
-
-```ts
-withType(type)
-```
-
-"Type of this condition. At most one of each condition type may apply to a resource at any point in time."
-
-## obj spec.componentDefinition.status.latestRevision
-
-"LatestRevision of the component definition"
-
-### fn spec.componentDefinition.status.latestRevision.withName
-
-```ts
-withName(name)
-```
-
-
-
-### fn spec.componentDefinition.status.latestRevision.withRevision
-
-```ts
-withRevision(revision)
-```
-
-
-
-### fn spec.componentDefinition.status.latestRevision.withRevisionHash
-
-```ts
-withRevisionHash(revisionHash)
-```
-
-"RevisionHash record the hash value of the spec of ApplicationRevision object."
 
 ## obj spec.policyDefinition
 
@@ -1451,108 +1267,6 @@ withNamespace(namespace)
 ```
 
 "Namespace of the secret."
-
-## obj spec.policyDefinition.status
-
-"PolicyDefinitionStatus is the status of PolicyDefinition"
-
-### fn spec.policyDefinition.status.withConditions
-
-```ts
-withConditions(conditions)
-```
-
-"Conditions of the resource."
-
-### fn spec.policyDefinition.status.withConditionsMixin
-
-```ts
-withConditionsMixin(conditions)
-```
-
-"Conditions of the resource."
-
-**Note:** This function appends passed data to existing values
-
-### fn spec.policyDefinition.status.withConfigMapRef
-
-```ts
-withConfigMapRef(configMapRef)
-```
-
-"ConfigMapRef refer to a ConfigMap which contains OpenAPI V3 JSON schema of Component parameters."
-
-## obj spec.policyDefinition.status.conditions
-
-"Conditions of the resource."
-
-### fn spec.policyDefinition.status.conditions.withLastTransitionTime
-
-```ts
-withLastTransitionTime(lastTransitionTime)
-```
-
-"LastTransitionTime is the last time this condition transitioned from one status to another."
-
-### fn spec.policyDefinition.status.conditions.withMessage
-
-```ts
-withMessage(message)
-```
-
-"A Message containing details about this condition's last transition from one status to another, if any."
-
-### fn spec.policyDefinition.status.conditions.withReason
-
-```ts
-withReason(reason)
-```
-
-"A Reason for this condition's last transition from one status to another."
-
-### fn spec.policyDefinition.status.conditions.withStatus
-
-```ts
-withStatus(status)
-```
-
-"Status of this condition; is it currently True, False, or Unknown?"
-
-### fn spec.policyDefinition.status.conditions.withType
-
-```ts
-withType(type)
-```
-
-"Type of this condition. At most one of each condition type may apply to a resource at any point in time."
-
-## obj spec.policyDefinition.status.latestRevision
-
-"LatestRevision of the component definition"
-
-### fn spec.policyDefinition.status.latestRevision.withName
-
-```ts
-withName(name)
-```
-
-
-
-### fn spec.policyDefinition.status.latestRevision.withRevision
-
-```ts
-withRevision(revision)
-```
-
-
-
-### fn spec.policyDefinition.status.latestRevision.withRevisionHash
-
-```ts
-withRevisionHash(revisionHash)
-```
-
-"RevisionHash record the hash value of the spec of ApplicationRevision object."
 
 ## obj spec.traitDefinition
 
@@ -2008,128 +1722,6 @@ withNamespace(namespace)
 
 "Namespace of the secret."
 
-## obj spec.traitDefinition.spec.status
-
-"Status defines the custom health policy and status message for trait"
-
-### fn spec.traitDefinition.spec.status.withCustomStatus
-
-```ts
-withCustomStatus(customStatus)
-```
-
-"CustomStatus defines the custom status message that could display to user"
-
-### fn spec.traitDefinition.spec.status.withHealthPolicy
-
-```ts
-withHealthPolicy(healthPolicy)
-```
-
-"HealthPolicy defines the health check policy for the abstraction"
-
-## obj spec.traitDefinition.status
-
-"TraitDefinitionStatus is the status of TraitDefinition"
-
-### fn spec.traitDefinition.status.withConditions
-
-```ts
-withConditions(conditions)
-```
-
-"Conditions of the resource."
-
-### fn spec.traitDefinition.status.withConditionsMixin
-
-```ts
-withConditionsMixin(conditions)
-```
-
-"Conditions of the resource."
-
-**Note:** This function appends passed data to existing values
-
-### fn spec.traitDefinition.status.withConfigMapRef
-
-```ts
-withConfigMapRef(configMapRef)
-```
-
-"ConfigMapRef refer to a ConfigMap which contains OpenAPI V3 JSON schema of Component parameters."
-
-## obj spec.traitDefinition.status.conditions
-
-"Conditions of the resource."
-
-### fn spec.traitDefinition.status.conditions.withLastTransitionTime
-
-```ts
-withLastTransitionTime(lastTransitionTime)
-```
-
-"LastTransitionTime is the last time this condition transitioned from one status to another."
-
-### fn spec.traitDefinition.status.conditions.withMessage
-
-```ts
-withMessage(message)
-```
-
-"A Message containing details about this condition's last transition from one status to another, if any."
-
-### fn spec.traitDefinition.status.conditions.withReason
-
-```ts
-withReason(reason)
-```
-
-"A Reason for this condition's last transition from one status to another."
-
-### fn spec.traitDefinition.status.conditions.withStatus
-
-```ts
-withStatus(status)
-```
-
-"Status of this condition; is it currently True, False, or Unknown?"
-
-### fn spec.traitDefinition.status.conditions.withType
-
-```ts
-withType(type)
-```
-
-"Type of this condition. At most one of each condition type may apply to a resource at any point in time."
-
-## obj spec.traitDefinition.status.latestRevision
-
-"LatestRevision of the component definition"
-
-### fn spec.traitDefinition.status.latestRevision.withName
-
-```ts
-withName(name)
-```
-
-
-
-### fn spec.traitDefinition.status.latestRevision.withRevision
-
-```ts
-withRevision(revision)
-```
-
-
-
-### fn spec.traitDefinition.status.latestRevision.withRevisionHash
-
-```ts
-withRevisionHash(revisionHash)
-```
-
-"RevisionHash record the hash value of the spec of ApplicationRevision object."
-
 ## obj spec.workflowStepDefinition
 
 "WorkflowStepDefinition records the snapshot of the created/modified WorkflowStepDefinition"
@@ -2481,105 +2073,3 @@ withNamespace(namespace)
 ```
 
 "Namespace of the secret."
-
-## obj spec.workflowStepDefinition.status
-
-"WorkflowStepDefinitionStatus is the status of WorkflowStepDefinition"
-
-### fn spec.workflowStepDefinition.status.withConditions
-
-```ts
-withConditions(conditions)
-```
-
-"Conditions of the resource."
-
-### fn spec.workflowStepDefinition.status.withConditionsMixin
-
-```ts
-withConditionsMixin(conditions)
-```
-
-"Conditions of the resource."
-
-**Note:** This function appends passed data to existing values
-
-### fn spec.workflowStepDefinition.status.withConfigMapRef
-
-```ts
-withConfigMapRef(configMapRef)
-```
-
-"ConfigMapRef refer to a ConfigMap which contains OpenAPI V3 JSON schema of Component parameters."
-
-## obj spec.workflowStepDefinition.status.conditions
-
-"Conditions of the resource."
-
-### fn spec.workflowStepDefinition.status.conditions.withLastTransitionTime
-
-```ts
-withLastTransitionTime(lastTransitionTime)
-```
-
-"LastTransitionTime is the last time this condition transitioned from one status to another."
-
-### fn spec.workflowStepDefinition.status.conditions.withMessage
-
-```ts
-withMessage(message)
-```
-
-"A Message containing details about this condition's last transition from one status to another, if any."
-
-### fn spec.workflowStepDefinition.status.conditions.withReason
-
-```ts
-withReason(reason)
-```
-
-"A Reason for this condition's last transition from one status to another."
-
-### fn spec.workflowStepDefinition.status.conditions.withStatus
-
-```ts
-withStatus(status)
-```
-
-"Status of this condition; is it currently True, False, or Unknown?"
-
-### fn spec.workflowStepDefinition.status.conditions.withType
-
-```ts
-withType(type)
-```
-
-"Type of this condition. At most one of each condition type may apply to a resource at any point in time."
-
-## obj spec.workflowStepDefinition.status.latestRevision
-
-"LatestRevision of the component definition"
-
-### fn spec.workflowStepDefinition.status.latestRevision.withName
-
-```ts
-withName(name)
-```
-
-
-
-### fn spec.workflowStepDefinition.status.latestRevision.withRevision
-
-```ts
-withRevision(revision)
-```
-
-
-
-### fn spec.workflowStepDefinition.status.latestRevision.withRevisionHash
-
-```ts
-withRevisionHash(revisionHash)
-```
-
-"RevisionHash record the hash value of the spec of ApplicationRevision object."
